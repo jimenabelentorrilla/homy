@@ -1,4 +1,4 @@
-import Logo from "..//assets/homy-06.png";
+import Logo from "..//assets/logo.png";
 
 export const Nav = () => {
   return (
