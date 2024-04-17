@@ -1,7 +1,7 @@
 import './App.css'
-import { Header } from './componentes/Header';
-import { Nav } from "./componentes/Nav";
-import { Our } from './componentes/Our';
+import { Header } from './componentes/Header/Header';
+import { Nav } from "./componentes/Nav/Nav";
+import { Our } from './componentes/Our/Our';
 
 function App() {
 
@@ -13,7 +13,6 @@ function App() {
         <Our />     
         
       </div>
-      
     </>
   )
 }

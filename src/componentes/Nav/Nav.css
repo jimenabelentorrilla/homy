@@ -1,0 +1,40 @@
+/**Nav*/
+.cnt-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 98px;
+    justify-content: space-between;
+    border-bottom: 1px solid #EDEDED;
+    gap: 115px;
+    justify-content: center;
+  }
+  .ul-flex {
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+  }
+  .ul-flex li, .cnt-flex p, .cnt-flex button{
+    color:var(--black);
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .cnt-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+  }
+  .cnt-flex button{
+    padding: 14px 24px;
+    border-radius: 30px;
+    background-color: var(--accent);
+    border: none;
+  }
+  .cnt-flex button:hover , .btn-ip:hover, .arrow-btn:hover{
+    background-color: #FFEC85;
+    cursor: pointer;
+    transition: ease-in .2s;
+  }
+  
+  

@@ -1,5 +1,7 @@
-import HrImg from "../assets/hr-img.png";
-import Google from "../assets/google.png";
+import HrImg from "../../assets/hr-img.png";
+import Google from "../../assets/google.png";
+import "./Header.css";
+
 export const Header = () => {
   return (
     <>
@@ -20,7 +22,7 @@ export const Header = () => {
                     <button className="btn-ip">Comenzar gratis</button>
                 </div>
                 <div>
-                    <img src={Google}/>
+                    <img className="google-btn" src={Google}/>
                 </div>
             </div>
             <div className="hr-rg">

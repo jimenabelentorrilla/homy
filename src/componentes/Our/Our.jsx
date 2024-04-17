@@ -1,8 +1,9 @@
-import BgCard from "../assets/Subtract.png";
-import Img1 from "../assets/Frame 70.png";
-import Img2 from "../assets/Frame 70 (1).png";
-import Img3 from "../assets/Frame 70(3).png";
-import Arrow from "../assets/arrow_forward.png";
+import BgCard from "../../assets/Subtract.png";
+import Img1 from "../../assets/Frame 70.png";
+import Img2 from "../../assets/Frame 70 (1).png";
+import Img3 from "../../assets/Frame 70(3).png";
+import Arrow from "../../assets/arrow_forward.png";
+import "./Our.css";
 
 const CardsProducts = ( { img , title }) => {
   return (
@@ -21,7 +22,6 @@ const CardsProducts = ( { img , title }) => {
                 <button className="arrow-btn"><img src={Arrow}/></button>
             </div>
         </div>
-        
     </div>
   )
 }
@@ -29,7 +29,7 @@ const CardsProducts = ( { img , title }) => {
 
 export const Our = () => {
   return (
-    <div className="row-2">
+    <div className="row-2" id="productos">
         <h2>Explorá nuestros productos</h2>
         <div className="cards-conteiner">
             <CardsProducts 

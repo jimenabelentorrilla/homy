@@ -1,0 +1,72 @@
+/****nuestros productos****/
+.row-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 577px;
+  }
+  .row-2 h2{
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+  }
+  .cards-conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  .ver-btn{
+    padding: 16px 24px 16px 24px;
+    border: 2px var(--accent) solid;
+    border-radius: 30px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--accent);
+  }
+  .ver-btn:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    transition: .2s ease-in;
+    cursor: pointer;
+  }
+  
+  /**card*/
+  .bg-card{
+    position: absolute;
+  }
+  .bg-card img{
+    filter: drop-shadow(rgba(0, 0, 0, 0.533) 0.3rem 0.3rem 15px);
+  }
+  .img-card{
+    position: relative;
+    top: 0;
+  }
+  .card-box-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    height: 113px;
+  }
+  .text-card{
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+  }
+  .arrow-btn{
+    position: relative;
+    border-radius: 100px;
+    width: 67px;
+    height: 67px;
+    background-color: var(--accent);
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+  }
+  
