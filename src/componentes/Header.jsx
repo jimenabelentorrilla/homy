@@ -10,7 +10,7 @@ export const Header = () => {
                     <p>Rompemos las barreras de la distancia para que puedas interactuar con tu mascota estés donde estés.<br/> 
                     ¡Explora una nueva forma de cuidar y compartir momentos incluso cuando no estás en casa!</p>
                 </div>
-                <div className="ip-flex">
+                <div>
                     <div className="input-cnt">
                         <input 
                             placeholder="Ingresá tu email"
