@@ -34,7 +34,7 @@ export const Our = () => {
         <div className="cards-conteiner">
             <CardsProducts 
                 img={Img1}
-                title="Camaras"
+                title="Cámaras"
             />
             <CardsProducts 
                 img={Img2}

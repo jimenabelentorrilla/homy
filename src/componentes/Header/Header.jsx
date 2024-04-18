@@ -10,7 +10,7 @@ export const Header = () => {
                 <div className="hr-text"> 
                     <h1><span>Conectate</span> con tus mascotas</h1>
                     <p>Rompemos las barreras de la distancia para que puedas interactuar con tu mascota estés donde estés.<br/> 
-                    ¡Explora una nueva forma de cuidar y compartir momentos incluso cuando no estás en casa!</p>
+                    ¡Explorá una nueva forma de cuidar y compartir momentos incluso cuando no estás en casa!</p>
                 </div>
                 <div>
                     <div className="input-cnt">

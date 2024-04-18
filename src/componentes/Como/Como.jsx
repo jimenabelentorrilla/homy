@@ -29,16 +29,16 @@ export const Como = () => {
             <div className="items-flex">
                 <Item 
                     img={Icon1}
-                    text="Descarga la app en la playstore" />
+                    text="Descargá la app en la playstore" />
                 <Item 
                     img={Icon2}
-                    text="Explora todos los productos" />
+                    text="Explorá todos los productos" />
                 <Item 
                     img={Icon3}
-                    text="Instala en tu hogar facil y rapido" />
+                    text="Instalá en tu hogar facil y rapido" />
                 <Item 
                     img={Icon4}
-                    text="Disfruta de todas las funcionalidades!" />
+                    text="¡Disfrutá de todas las funcionalidades!" />
             </div>
             <div >
                 <button className="sct-3-btn">Comenzar</button>
