@@ -1,11 +1,14 @@
 .bg-fq{
  background-color: #FFEC8599;
+ height: auto;
+ padding: 80px;
 }
 .faqs-flex{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 40px;
 }
 .accordion-flex{
     display: flex;
@@ -15,9 +18,10 @@
 .accordion{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap:40px;
     height: auto;
-    gap: 40px;
+   
 }
 .accordion h2{
     color: #383838;

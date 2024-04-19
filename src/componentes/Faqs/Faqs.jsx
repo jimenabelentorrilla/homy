@@ -2,7 +2,6 @@ import "./Faqs.css";
 import Cat from "../../assets/cat.png";
 import Arrow from "../../assets/expand_more.png";
 import { useState } from "react";
-import { useEffect } from "react";
 
 const LineAcc = ( { question , answer }) => {
 
@@ -10,7 +9,7 @@ const LineAcc = ( { question , answer }) => {
 
     const handleClick = () =>{
         setMostrar(
-            prev=> !prev
+            prev => !prev
         );
     }
 
@@ -33,14 +32,6 @@ const LineAcc = ( { question , answer }) => {
 
 const BloqueAccordion = ({ answer }) => {
 
-    useEffect(() => {
-      console.log("me monté")
-    
-      return () => {
-        console.log("me desmonté")
-      }
-    }, [])
-    
    return (
     <>
         <div>
@@ -55,7 +46,7 @@ export const Faqs = () => {
 
   return (
     <>
-        <div className="bg-fq">
+        <div className="bg-fq" id="faqs">
             <div className="faqs-flex">
                 <div className="accordion">
                     <h2>Preguntas frecuentes</h2>
