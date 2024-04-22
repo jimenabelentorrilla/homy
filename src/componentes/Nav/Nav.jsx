@@ -9,7 +9,6 @@ export const Nav = () => {
                 <img src={Logo}/>
             </div>
             <ul className="ul-flex">
-                <li>Home</li>
                 <a href="#productos"><li>Productos</li></a>
                 <a href="#como"><li>¿Cómo funciona?</li></a>
                 <a href="#faqs"><li>Faqs</li></a>

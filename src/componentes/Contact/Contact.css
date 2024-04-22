@@ -39,6 +39,7 @@
 .icons-flex{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 26px;
 }
 
@@ -95,4 +96,8 @@
     color: #1E1E1E;
     font-weight: 400;
     cursor: pointer;
+}
+.btn-cnt:hover{
+    background-color: #FFEC85;
+    transition: ease-in .2s;
 }

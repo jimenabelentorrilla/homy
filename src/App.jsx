@@ -5,6 +5,7 @@ import { Faqs } from './componentes/Faqs/Faqs';
 import { Header } from './componentes/Header/Header';
 import { Nav } from "./componentes/Nav/Nav";
 import { Our } from './componentes/Our/Our';
+import { Footer } from "./componentes/Footer/Footer";
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
         <Our />
         <Como />
         <Faqs />
-        <Contact />    
+        <Contact />
+        <Footer />    
       </div>
     </>
   )

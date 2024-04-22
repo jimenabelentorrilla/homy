@@ -19,7 +19,7 @@ const CardsProducts = ( { img , title }) => {
             <div className="text-card">
                 <p>{title}</p>
             </div>
-            <div >
+            <div>
                 <button className="arrow-btn"><img src={Arrow}/></button>
             </div>
         </div>

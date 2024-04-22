@@ -1,0 +1,62 @@
+.ft-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0px;
+}
+.ft-flex{
+    display: flex;
+    flex-direction: column;
+}
+.icon-ft-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 242px;
+    gap: 46px;
+}
+.icon-ft{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #FFEC8599;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+.icon-ft:hover{
+    background-color: #FFCA61;
+    transition: ease-in .3s;
+}
+/***bloque dos***/
+.ft-an-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.ft-ul{
+    font-size: 20px;
+    font-weight: 400;
+    color: #CBCBCB;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.ft-ul li{
+    cursor: pointer;
+}
+.ft-ul li:hover{
+    color:#FFCA61;
+    transition: ease-in .3s;
+}
+.an-clr{
+    color: #CBCBCB;
+}
+.an-bold{
+    color: #383838;
+    font-weight: 700;
+}

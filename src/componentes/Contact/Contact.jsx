@@ -5,7 +5,7 @@ import IconYt from "../../assets/icon-yt.png";
 
 const Form = () => {
   return (
-    <div className="frame-86">
+    <div className="frame-86" id="contacto">
         <div className="flx-87">
             <h4 className="cnt-title">Contactanos</h4>
             <div className="inp">
@@ -20,8 +20,7 @@ const Form = () => {
             </div>
             <div className="msg-inp">
                 <textarea 
-                    placeholder="Mensaje"
-                    
+                    placeholder="Mensaje"   
                 />
             </div>
             <div>
@@ -31,8 +30,6 @@ const Form = () => {
     </div>
   )
 }
-
-
 
 
 export const Contact = () => {
@@ -45,14 +42,26 @@ export const Contact = () => {
                     <p>En Homy, valoramos tu feedback y estamos aquí para responder a todas tus preguntas.<br /> ¡No dudes en ponerte en contacto con nosotros!</p>
                 </div>
                 <div className="icons-flex">
-                    <div><img src={IconWp} /></div>
-                    <div><img src={IconIg} /></div>
-                    <div><img src={IconYt} /></div>
+                    <div>
+                        <a href="#">
+                            <img src={IconWp} />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src={IconIg} />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src={IconYt} />
+                        </a>
+                    </div>
                 </div>
             </div>
             
             <div>
-                <span className="sp-cn">support@homy.com</span>
+                <a href="#"><span className="sp-cn">support@homy.com</span></a>
             </div>
         </div>             
         <div>
