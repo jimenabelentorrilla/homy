@@ -1,12 +1,20 @@
 import HrImg from "../../assets/hr-img.png";
 import Google from "../../assets/google.png";
 import "./Header.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export const Header = () => {
+
+    useEffect(() => {
+        Aos.init()
+      }, [])
+
   return (
     <>
         <div className="header">
-            <div className="hr-lf">
+            <div className="hr-lf" data-aos="fade-right" data-aos-duration="1500"   data-aos-delay="300">
                 <div className="hr-text"> 
                     <h1><span>Conectate</span> con tus mascotas</h1>
                     <p>Rompemos las barreras de la distancia para que puedas interactuar con tu mascota estés donde estés.<br/> 
@@ -25,7 +33,7 @@ export const Header = () => {
                     <img className="google-btn" src={Google}/>
                 </div>
             </div>
-            <div className="hr-rg">
+            <div className="hr-rg" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" >
                 <img src={HrImg}/>
             </div>
         </div>

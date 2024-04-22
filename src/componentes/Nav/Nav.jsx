@@ -1,10 +1,19 @@
+import { useEffect } from "react";
 import Logo from "../../assets/logo.png";
 import "./Nav.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const Nav = () => {
+
+    useEffect(() => {
+      Aos.init()
+    }, [])
+    
+
   return (
     <>
-        <div className="cnt-nav">
+        <div className="cnt-nav" data-aos="fade-down"  data-aos-duration="2000">
             <div>
                 <img src={Logo}/>
             </div>

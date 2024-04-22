@@ -3,10 +3,15 @@ import Img1 from "../../assets/Frame 70.png";
 import Img2 from "../../assets/Frame 70 (1).png";
 import Img3 from "../../assets/Frame 70(3).png";
 import Arrow from "../../assets/arrow_forward.png";
+import Img4 from "../../assets/accesorios.jpg";
+import Img5 from "../../assets/juguetes.jpg";
+import Img6 from "../../assets/higiene.png";
 import "./Our.css";
 import { useState } from "react";
 
 const CardsProducts = ( { img , title }) => {
+
+    
   return (
     <div>
         <div className="bg-card">
@@ -58,16 +63,16 @@ export const Our = () => {
                 verMas &&   <>
                                 <div className="cards-conteiner">
                                     <CardsProducts 
-                                        img={Img3}
-                                        title="Lorem"
+                                        img={Img4}
+                                        title="Accesorios"
                                     />
                                     <CardsProducts 
-                                        img={Img2}
-                                        title="Sarasa"
+                                        img={Img5}
+                                        title="Juguetes"
                                     />
                                     <CardsProducts 
-                                        img={Img1}
-                                        title="Agus te amo"
+                                        img={Img6}
+                                        title="Higiene"
                                     />
                                 </div>
                             </>

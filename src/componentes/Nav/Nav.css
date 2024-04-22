@@ -4,9 +4,8 @@
     flex-direction: row;
     align-items: center;
     height: 98px;
-    justify-content: space-between;
     border-bottom: 1px solid #EDEDED;
-    gap: 115px;
+    gap: 170px;
     justify-content: center;
   }
   .ul-flex {

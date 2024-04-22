@@ -57,15 +57,15 @@ export const Faqs = () => {
                         />
                         <LineAcc 
                             question="¿Puedo ver a mi mascota desde cualquier lugar?"
-                            answer="Loremasjdlkajsdlaskkdjakldjklajsdja"
+                            answer="Si, podrás ver a tu mascota desde cualquier lugar con nuestra aplicación móvil, brindandote la tranquilidad de estar conectado sin importar donde te encuentres."
                         />
                         <LineAcc 
                             question="¿Hay algún costo adicional después de la compra inicial?"
-                            answer="SARASAAAA"
+                            answer="No, después de tu compra iniciar no hay costos adicionales. Ofrecemos una experiencia sin sorpresas ni cargos ocultos, para que disfrutes plenamente de nuestros servicios."
                         />
                         <LineAcc 
                             question="¿Cúanto tiempo dura la batería de los dispositivos Homy?"
-                            answer="Hola como estas?"
+                            answer="La duración de la bateria de nuestros dispositivos Homy varía segun el modelo pero puedes mantenerlos conectados a través del cable usb incluido. Para detalles específicos consulta las especificaciones de cada producto."
                         />
                     </div>
                 </div>
