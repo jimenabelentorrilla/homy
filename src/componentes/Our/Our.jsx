@@ -9,7 +9,7 @@ import Img6 from "../../assets/higiene.png";
 import "./Our.css";
 import { useState } from "react";
 
-const CardsProducts = ( { img , title }) => {
+const CardsProducts = ({ img , title }) => {
 
     
   return (
@@ -79,7 +79,7 @@ export const Our = () => {
             }
         
         <div>
-           <button className="ver-btn" onClick={handleVerMas}>{verMas ? "Ver menos" : "Ver más"}</button> 
+           <button className="ver-btn" onClick={handleVerMas}>{ verMas ? "Ver menos" : "Ver más" }</button> 
         </div>   
     </div>
   )
