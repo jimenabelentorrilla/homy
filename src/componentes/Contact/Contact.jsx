@@ -4,23 +4,31 @@ import IconWp from "../../assets/icon-wp.png";
 import IconYt from "../../assets/icon-yt.png";
 
 const Form = () => {
+     
   return (
+
     <div className="frame-86" id="contacto">
         <div className="flx-87">
             <h4 className="cnt-title">Contactanos</h4>
             <div className="inp">
                 <input 
                     placeholder="Nombre"
+                    type="username"
+					name="userName"					
                 />
             </div>
             <div className="inp">
                 <input 
                     placeholder="Email"
+                    type="email"
+					name="email"
                 />
             </div>
             <div className="msg-inp">
                 <textarea 
-                    placeholder="Mensaje"   
+                    placeholder="Mensaje"
+                    type="mensaje"
+					name="mensaje"					  
                 />
             </div>
             <div>

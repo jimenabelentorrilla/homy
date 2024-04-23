@@ -134,3 +134,7 @@
     color: #FFCA61;
     cursor:pointer;
   }
+  .error{
+    color:red;
+    font-size: 12px;
+  }
