@@ -35,6 +35,11 @@
     cursor: pointer;
     transition: ease-in .2s;
   }
+  .cnt-flex p:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: .3s ease;
+  }
   
   /**modal*/
   .tarjeta{

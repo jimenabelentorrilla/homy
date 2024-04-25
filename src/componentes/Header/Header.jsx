@@ -1,15 +1,13 @@
 import HrImg from "../../assets/hr-img.png";
 import Google from "../../assets/google.png";
 import "./Header.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useContext } from "react";
+import { AppContext } from "../../context/AppProvider";
 
 export const Header = () => {
 
-    useEffect(() => {
-        Aos.init()
-      }, [])
+    const { AosInit } = useContext(AppContext);
+    AosInit()
 
   return (
     <>
