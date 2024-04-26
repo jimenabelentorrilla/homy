@@ -1,3 +1,5 @@
+import { useState } from "react";
+import "./Our.css";
 import BgCard from "../../assets/Subtract.png";
 import Img1 from "../../assets/Frame 70.png";
 import Img2 from "../../assets/Frame 70 (1).png";
@@ -6,10 +8,8 @@ import Arrow from "../../assets/arrow_forward.png";
 import Img4 from "../../assets/accesorios.jpg";
 import Img5 from "../../assets/juguetes.jpg";
 import Img6 from "../../assets/higiene.png";
-import "./Our.css";
-import { useState } from "react";
 
-const CardsProducts = ({ img , title }) => {
+const CardsProducts = ( { img , title } ) => {
   return (
     <div>
         <div className="bg-card">
@@ -33,14 +33,6 @@ const CardsProducts = ({ img , title }) => {
 export const Our = () => {
 
     const [verMas, setVerMas] = useState(false);
-
-    const handleVerMas = () =>{
-        setVerMas(
-            prev => !prev
-        );
-    }
-
- 
 
   return (
     <div className="row-2" id="productos">
@@ -79,7 +71,7 @@ export const Our = () => {
             }
         
         <div>
-           <button className="ver-btn" onClick={handleVerMas}>{ verMas ? "Ver menos" : "Ver más" }</button> 
+           <button className="ver-btn" onClick={() =>{ setVerMas( prev => !prev); }}>{ verMas ? "Ver menos" : "Ver más" }</button> 
         </div>   
     </div>
   )

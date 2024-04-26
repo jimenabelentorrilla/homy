@@ -1,15 +1,15 @@
+import "./Nav.css";
 import { useContext} from "react";
+import { AppContext } from "../../context/AppProvider";
 import Google from "../../assets/google 2.png";
 import Person from "../../assets/person.png";
 import Mail from "../../assets/mail.png";
 import Lock from "../../assets/lock.png";
-import "./Nav.css";
-import { AppContext } from "../../context/AppProvider";
 
 
 export const ModalSignUp = () => {
 
-    const { onSubmit, onInputChange, userName, email, password, errors, handleOpenSignIn } = useContext(AppContext);
+    const { onSubmit, onInputChange, userName, email, password, errors } = useContext(AppContext);
   
     return (
     <>
@@ -27,7 +27,6 @@ export const ModalSignUp = () => {
                         <div>
                         <img src={Person} /> 
                         </div>
-                        
                         <input 
                             placeholder="Nombre"
                             type="username"
@@ -43,7 +42,6 @@ export const ModalSignUp = () => {
                         <div>
                             <img src={Mail} />
                         </div>
-                        
                         <input 
                             placeholder="Email"
                             type="email"
@@ -69,7 +67,6 @@ export const ModalSignUp = () => {
                     </div>
                     <small className="error">{errors.password}</small>
                 </div>
-
                 <div className="span-cont">
                     <span>¿Olvidaste tu contraseña?</span>
                 </div>
@@ -77,7 +74,7 @@ export const ModalSignUp = () => {
                     <button className="btn-rgs">Registrarse</button>
                 </div>
                 <div className="color-p-span">
-                    <p>¿Ya tenés una cuenta? <span onClick={handleOpenSignIn}>Iniciar sesión</span></p> 
+                    <p>¿Ya tenés una cuenta? <span>Iniciar sesión</span></p> 
                 </div>            
             </form>
     </>

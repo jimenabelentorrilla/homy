@@ -2,14 +2,12 @@ import "./Nav.css";
 import "./Modal.css";
 import { useContext} from "react";
 import { AppContext } from "../../context/AppProvider";
+import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
-import { ModalSignUp } from "./ModalSignUp";
-import { ModalSignIn } from "./ModalSignIn";
-import Modal from '@mui/material/Modal';
 
 export const Nav = () => {
 
-    const { open, handleClose, showSignIn, AosInit, handleOpenSignIn, handleOpenSignUp} = useContext(AppContext);
+    const { AosInit } = useContext(AppContext);
     
     AosInit()
 
@@ -26,20 +24,12 @@ export const Nav = () => {
                 <a href="#contacto"><li>Contacto</li></a>
             </ul>
             <div className="cnt-flex">
-                <p onClick={handleOpenSignIn}>Ingresar</p>
-                <button onClick={handleOpenSignUp}>Comenzar</button>
+                <NavLink to="/signIn"><p>Ingresar</p></NavLink>
+                <NavLink to="/signUp"><button>Comenzar</button></NavLink>
             </div>
         </div>
-        {/**Funciona pero está atado con alambres, la consola se queja porque MUI al parecer no permite esto**/
-        /***** A CHEQUEAR! ****/}
-        <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description">
-                {showSignIn ? <ModalSignIn /> : <ModalSignUp />}
-        </Modal>        
-        
+        {/**Falta agregar un modal porque las rutas navegan y dejan las cards al final****/}
+   
     </>
   )
 }

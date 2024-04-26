@@ -1,18 +1,18 @@
 import { useContext} from "react";
+import "./Nav.css";
+import { AppContext } from "../../context/AppProvider";
 import Google from "../../assets/google 2.png";
 import Mail from "../../assets/mail.png";
 import Lock from "../../assets/lock.png";
-import "./Nav.css";
-import { AppContext } from "../../context/AppProvider";
 
 
 export const ModalSignIn = () => {
 
-    const { onSubmit, onInputChange, email, password, errors, handleOpenSignUp } = useContext(AppContext);
+    const { onSubmit, onInputChange, email, password, errors} = useContext(AppContext);
   
     return (
     <>
-        
+             
             <form onSubmit={onSubmit} className="tarjeta">            
                 <h2>Ingresar a Homy</h2>
                 <div className="btn-google">
@@ -22,20 +22,18 @@ export const ModalSignIn = () => {
                 <div className="hr-st">
                     <hr /><span>o</span><hr />
                 </div>
-                
                 <div>
                     <div className="cnt-input">
                         <div>
                             <img src={Mail} />
                         </div>
-                        
                         <input 
                             placeholder="Email"
                             type="email"
                             name="email"
                             value={email}
-                            onChange={onInputChange} />
-                        
+                            onChange={onInputChange} 
+                        />
                     </div>
                     <small className="error">{errors.email}</small>
                 </div>
@@ -49,12 +47,11 @@ export const ModalSignIn = () => {
                             type="password"
                             name="password"
                             value={password}
-                            onChange={onInputChange} />
-                        
+                            onChange={onInputChange} 
+                        />
                     </div>
                     <small className="error">{errors.password}</small>
                 </div>
-
                 <div className="span-cont">
                     <span>¿Olvidaste tu contraseña?</span>
                 </div>
@@ -62,9 +59,9 @@ export const ModalSignIn = () => {
                     <button className="btn-rgs">Ingresar con email</button>
                 </div>
                 <div className="color-p-span">
-                    <p>¿No tenés una cuenta? <span onClick={handleOpenSignUp}>Registrarse</span></p> 
+                    <p>¿No tenés una cuenta? <span>Registrarse</span></p> 
                 </div>            
-            </form>
+            </form>    
     </>
   )
 }
