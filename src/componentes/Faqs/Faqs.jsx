@@ -48,7 +48,7 @@ export const Faqs = () => {
     <>
         <div className="bg-fq" id="faqs">
             <div className="faqs-flex">
-                <div className="accordion">
+                <div className="accordion" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
                     <h2>Preguntas frecuentes</h2>
                     <div className="accordion-flex">
                         <LineAcc 
@@ -69,7 +69,7 @@ export const Faqs = () => {
                         />
                     </div>
                 </div>
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
                     <img className="cat-img" src={Cat}/>
                 </div>
             </div>

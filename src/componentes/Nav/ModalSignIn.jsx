@@ -3,23 +3,17 @@ import Google from "../../assets/google 2.png";
 import Mail from "../../assets/mail.png";
 import Lock from "../../assets/lock.png";
 import "./Nav.css";
-import Modal from '@mui/material/Modal';
 import { AppContext } from "../../context/AppProvider";
 
-import React from 'react'
 
 export const ModalSignIn = () => {
 
-    const { open, handleClose, onSubmit, onInputChange, email, password, errors } = useContext(AppContext);
+    const { onSubmit, onInputChange, email, password, errors, handleOpenSignUp } = useContext(AppContext);
   
     return (
     <>
-        <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description">
-            <form onSubmit={onSubmit }className="tarjeta">            
+        
+            <form onSubmit={onSubmit} className="tarjeta">            
                 <h2>Ingresar a Homy</h2>
                 <div className="btn-google">
                     <img src={Google}/>
@@ -68,10 +62,9 @@ export const ModalSignIn = () => {
                     <button className="btn-rgs">Ingresar con email</button>
                 </div>
                 <div className="color-p-span">
-                    <p>¿No tenés una cuenta? <span>Registrarse</span></p> 
+                    <p>¿No tenés una cuenta? <span onClick={handleOpenSignUp}>Registrarse</span></p> 
                 </div>            
             </form>
-        </Modal>
     </>
   )
 }

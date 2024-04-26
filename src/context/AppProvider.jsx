@@ -7,11 +7,27 @@ export const AppContext = createContext();
 
 export const AppProvider = ( {children} ) => {
 
+
+
+    const [showSignIn, setShowSignIn] = useState(false);
+
+    const handleOpenSignUp = () => {
+        setShowSignIn(false);
+        handleOpen();
+    };
+
+    const handleOpenSignIn = () => {
+        setShowSignIn(true);
+        handleOpen();
+    };
+
+    /************ Funcion para inicializar AOS - animaciones************ */
     const AosInit = () => {
         useEffect(() => {
             Aos.init()
           }, [])
     }
+    
 
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -78,8 +94,10 @@ export const AppProvider = ( {children} ) => {
             userName, 
             email,
             password,
+            handleOpenSignIn, 
+            handleOpenSignUp,
+            showSignIn,
             AosInit
-                       
 		};
 
 	return (

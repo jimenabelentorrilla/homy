@@ -10,8 +10,6 @@ import "./Our.css";
 import { useState } from "react";
 
 const CardsProducts = ({ img , title }) => {
-
-    
   return (
     <div>
         <div className="bg-card">
@@ -42,10 +40,12 @@ export const Our = () => {
         );
     }
 
+ 
+
   return (
     <div className="row-2" id="productos">
-        <h2>Explorá nuestros productos</h2>
-        <div className="cards-conteiner">
+        <h2 data-aos="fade-down" data-aos-duration="1500"   data-aos-delay="300">Explorá nuestros productos</h2>
+        <div className="cards-conteiner" data-aos="fade-up" data-aos-duration="1500"   data-aos-delay="300">
             <CardsProducts 
                 img={Img1}
                 title="Cámaras"

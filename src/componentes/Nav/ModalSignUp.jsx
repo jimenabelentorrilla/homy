@@ -4,23 +4,16 @@ import Person from "../../assets/person.png";
 import Mail from "../../assets/mail.png";
 import Lock from "../../assets/lock.png";
 import "./Nav.css";
-import Modal from '@mui/material/Modal';
 import { AppContext } from "../../context/AppProvider";
 
-import React from 'react'
 
 export const ModalSignUp = () => {
 
-    const { open, handleClose, onSubmit, onInputChange, userName, email, password, errors } = useContext(AppContext);
+    const { onSubmit, onInputChange, userName, email, password, errors, handleOpenSignIn } = useContext(AppContext);
   
     return (
     <>
-        <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description">
-            <form onSubmit={onSubmit }className="tarjeta">
+            <form onSubmit={onSubmit} className="tarjeta">
                 <h2>Crear una cuenta</h2>
                 <div className="btn-google">
                     <img src={Google}/>
@@ -84,10 +77,9 @@ export const ModalSignUp = () => {
                     <button className="btn-rgs">Registrarse</button>
                 </div>
                 <div className="color-p-span">
-                    <p>¿Ya tenés una cuenta? <span>Iniciar sesión</span></p> 
+                    <p>¿Ya tenés una cuenta? <span onClick={handleOpenSignIn}>Iniciar sesión</span></p> 
                 </div>            
             </form>
-        </Modal>
     </>
   )
 }

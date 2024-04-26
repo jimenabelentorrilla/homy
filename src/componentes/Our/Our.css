@@ -6,6 +6,7 @@
     justify-content: space-between;
     height: auto;
     gap: 60px;
+    padding: 80px 0px;
   }
   .row-2 h2{
     font-weight: 700;

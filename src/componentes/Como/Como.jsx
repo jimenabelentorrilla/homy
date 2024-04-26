@@ -5,7 +5,7 @@ import Icon2 from "../../assets/icon2.png";
 import Icon3 from "../../assets/icon3.png";
 import Icon4 from "../../assets/icon4.png";
 
-const Item = ({img, text}) => {
+const Item = ( {img, text} ) => {
   return (
     <div className="item-flex">
         <div className="item-circle">
@@ -21,10 +21,10 @@ const Item = ({img, text}) => {
 export const Como = () => {
   return (
     <div className="section-3">
-        <div>
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
             <img src={ComoImg}/>
         </div>
-        <div className="box-text" id="como">
+        <div className="box-text" id="como" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
             <h2>¿Cómo funciona Homy?</h2>
             <div className="items-flex">
                 <Item 

@@ -43,7 +43,7 @@ const Form = () => {
 export const Contact = () => {
   return (
     <div className="cnt-cnt">
-        <div className="cnt-flx">
+        <div className="cnt-flx" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
             <div className="asyd">
                 <div className="bloque-text">
                     <h3>Estamos aquí para ti.</h3>
@@ -72,7 +72,7 @@ export const Contact = () => {
                 <a href="#"><span className="sp-cn">support@homy.com</span></a>
             </div>
         </div>             
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
             <Form />
         </div>
     </div>
