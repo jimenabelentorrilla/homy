@@ -80,7 +80,7 @@ export const ModalSignUp = ({ onClose , onSignIn }) => {
 
                     <p>¿Ya tenés una cuenta? <NavLink to="/signIn"><span onClick={onSignIn}>Iniciar sesión</span> </NavLink></p> 
                 </div>
-                <p onClick={onClose} className="cerrar">CERRAR</p>               
+                <NavLink to="/"><p onClick={onClose} className="cerrar">CERRAR</p></NavLink>             
             </form>
     </>
   )

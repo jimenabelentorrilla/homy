@@ -21,6 +21,7 @@
   .cerrar{
     font-weight: 700;
     cursor: pointer;
+    color:#1E1E1E;
   }
   .btn-google {
     padding: 24px;

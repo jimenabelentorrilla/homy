@@ -64,7 +64,7 @@ export const ModalSignIn = ( { onClose, onSignUp }) => {
                 <div className="color-p-span">
                     <p>¿No tenés una cuenta? <NavLink to="/signUp"><span onClick={onSignUp}>Registrarse</span> </NavLink></p>
                 </div> 
-                <p onClick={onClose} className="cerrar">CERRAR</p>           
+                <NavLink to="/"><p onClick={onClose} className="cerrar">CERRAR</p></NavLink>           
             </form>    
     </>
   )
