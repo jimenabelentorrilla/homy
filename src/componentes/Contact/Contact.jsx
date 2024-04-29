@@ -95,7 +95,7 @@ export const Contact = () => {
             </div>
             
             <div>
-                <a href="#"><span className="sp-cn">support@homy.com</span></a>
+                <a href="#" className="sp-cn"><span >support@homy.com</span></a>
             </div>
         </div>             
         <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
