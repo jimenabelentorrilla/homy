@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: row;
     gap: 50px;
+    text-decoration: none;
+    list-style-type: none;
   }
   .ul-flex li, .cnt-flex p, .cnt-flex button{
     color: var(--black);
@@ -23,6 +25,9 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    
   }
   .cnt-flex button{
     padding: 14px 24px;

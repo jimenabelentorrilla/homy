@@ -47,8 +47,10 @@ const Form = () => {
                     <div className="msg-inp">
                         <textarea 
                             placeholder="Mensaje"
-                            type="mensaje"
-                            name="mensaje"					  
+                            type="text"
+                            name="message"
+                            value={message}
+                            onChange={onInputChange} 					  
                         />
                     </div>
                     <div>
@@ -63,7 +65,6 @@ const Form = () => {
     </div>
   )
 }
-
 
 export const Contact = () => {
   return (

@@ -45,6 +45,7 @@
     gap: 10px;
     display: flex;
     flex-direction: column;
+    list-style-type: none;
 }
 .ft-ul li{
     cursor: pointer;
@@ -55,8 +56,10 @@
 }
 .an-clr{
     color: #CBCBCB;
+    text-decoration: none;
 }
 .an-bold{
     color: #383838;
     font-weight: 700;
+    text-decoration: none;
 }
