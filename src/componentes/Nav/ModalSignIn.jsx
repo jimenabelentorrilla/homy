@@ -4,9 +4,9 @@ import { AppContext } from "../../context/AppProvider";
 import Google from "../../assets/google 2.png";
 import Mail from "../../assets/mail.png";
 import Lock from "../../assets/lock.png";
+import { NavLink } from "react-router-dom";
 
-
-export const ModalSignIn = () => {
+export const ModalSignIn = ( { onClose, onSignUp }) => {
 
     const { onSubmit, onInputChange, email, password, errors} = useContext(AppContext);
   
@@ -14,7 +14,10 @@ export const ModalSignIn = () => {
     <>
              
             <form onSubmit={onSubmit} className="tarjeta">            
-                <h2>Ingresar a Homy</h2>
+                
+                <div>
+                    <h2 className="title-tarj">Ingresar a Homy</h2>
+                </div>
                 <div className="btn-google">
                     <img src={Google}/>
                     <p>Ingresar con Google</p>
@@ -59,8 +62,9 @@ export const ModalSignIn = () => {
                     <button className="btn-rgs">Ingresar con email</button>
                 </div>
                 <div className="color-p-span">
-                    <p>¿No tenés una cuenta? <span>Registrarse</span></p> 
-                </div>            
+                    <p>¿No tenés una cuenta? <NavLink to="/signUp"><span onClick={onSignUp}>Registrarse</span> </NavLink></p>
+                </div> 
+                <p onClick={onClose} className="cerrar">CERRAR</p>           
             </form>    
     </>
   )

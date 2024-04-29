@@ -1,21 +1,44 @@
 import "./Nav.css";
 import "./Modal.css";
-import { useContext} from "react";
+import { useContext, useState} from "react";
 import { AppContext } from "../../context/AppProvider";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
+import Modal from '@mui/material/Modal';
+import { ModalSignIn } from "./ModalSignIn";
+import { Box } from "@mui/material";
+import { ModalSignUp } from "./ModalSignUp";
+
 
 export const Nav = () => {
 
     const { AosInit } = useContext(AppContext);
+    /*Modal Sign In*/
+    const [openSignIn, setOpenSignIn] = useState(false);
+    const handleOpenSignIn = () => setOpenSignIn(true);
+    const handleCloseSignIn = () => setOpenSignIn(false);
     
+    const onSignUp = () =>{
+        handleCloseSignIn()
+        handleOpenSignUp()
+    }
+    /*Modal Sign Up*/
+    const [openSignUp, setOpenSignUp] = useState(false);
+    const handleOpenSignUp = () => setOpenSignUp(true);
+    const handleCloseSignUp = () => setOpenSignUp(false);
+
+    const onSignIn = () =>{
+        handleCloseSignUp()
+        handleOpenSignIn()
+    }
+   
     AosInit()
 
   return (
     <>
         <div className="cnt-nav" data-aos="fade-down" data-aos-duration="2000">
             <div>
-                <img src={Logo}/>
+                <NavLink to="/"><img src={Logo}/></NavLink>
             </div>
             <ul className="ul-flex">
                 <a href="#productos"><li>Productos</li></a>
@@ -24,12 +47,37 @@ export const Nav = () => {
                 <a href="#contacto"><li>Contacto</li></a>
             </ul>
             <div className="cnt-flex">
-                <NavLink to="/signIn"><p>Ingresar</p></NavLink>
-                <NavLink to="/signUp"><button>Comenzar</button></NavLink>
+                <NavLink to="/signIn"><p onClick={handleOpenSignIn}>Ingresar</p></NavLink>
+                <NavLink to="/signUp"><button onClick={handleOpenSignUp}>Comenzar</button></NavLink>
             </div>
-        </div>
-        {/**Falta agregar un modal porque las rutas navegan y dejan las cards al final****/}
-   
+         </div>
+        
+        <Modal
+            open={openSignIn}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description">
+               <Box>
+                    <ModalSignIn 
+                        onClose={handleCloseSignIn}
+                        handleOpenSignUp={handleOpenSignUp}
+                        handleCloseSignIn={handleCloseSignIn}
+                        onSignUp={onSignUp} 
+                    />
+               </Box>
+        </Modal>  
+          
+        <Modal
+            open={openSignUp}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description">
+               <Box>
+                    <ModalSignUp 
+                        onClose={handleCloseSignUp}
+                        onSignIn={onSignIn}   
+                    />
+               </Box>
+        </Modal>  
+       
     </>
   )
 }

@@ -12,10 +12,15 @@
     align-items: center;
     gap: 30px;
   }
-  .tarjeta h2 {
+
+  .title-tarj{
     color:#1E1E1E;
     font-size: 30px;
     font-weight: 700;
+  }
+  .cerrar{
+    font-weight: 700;
+    cursor: pointer;
   }
   .btn-google {
     padding: 24px;

@@ -5,11 +5,14 @@ import Google from "../../assets/google 2.png";
 import Person from "../../assets/person.png";
 import Mail from "../../assets/mail.png";
 import Lock from "../../assets/lock.png";
+import { NavLink } from "react-router-dom";
 
 
-export const ModalSignUp = () => {
+export const ModalSignUp = ({ onClose , onSignIn }) => {
 
     const { onSubmit, onInputChange, userName, email, password, errors } = useContext(AppContext);
+
+  
   
     return (
     <>
@@ -74,8 +77,10 @@ export const ModalSignUp = () => {
                     <button className="btn-rgs">Registrarse</button>
                 </div>
                 <div className="color-p-span">
-                    <p>¿Ya tenés una cuenta? <span>Iniciar sesión</span></p> 
-                </div>            
+
+                    <p>¿Ya tenés una cuenta? <NavLink to="/signIn"><span onClick={onSignIn}>Iniciar sesión</span> </NavLink></p> 
+                </div>
+                <p onClick={onClose} className="cerrar">CERRAR</p>               
             </form>
     </>
   )

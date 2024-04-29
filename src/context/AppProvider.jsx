@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 export const AppContext = createContext();
 
 export const AppProvider = ( {children} ) => {
+   
 
     /**** Funcion para inicializar AOS - animaciones*** */
     const AosInit = () => {
