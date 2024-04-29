@@ -2,38 +2,63 @@ import "./Contact.css";
 import IconIg from "../../assets/icon-ig.png";
 import IconWp from "../../assets/icon-wp.png";
 import IconYt from "../../assets/icon-yt.png";
+import { useContext } from "react";
+import { AppContext } from "../../context/AppProvider";
 
 const Form = () => {
+
+    const { onSubmit, onInputChange, userName, email, message, errors} = useContext(AppContext);
      
   return (
 
     <div className="frame-86" id="contacto">
         <div className="flx-87">
             <h4 className="cnt-title">Contactanos</h4>
-            <div className="inp">
-                <input 
-                    placeholder="Nombre"
-                    type="username"
-					name="userName"					
-                />
-            </div>
-            <div className="inp">
-                <input 
-                    placeholder="Email"
-                    type="email"
-					name="email"
-                />
-            </div>
-            <div className="msg-inp">
-                <textarea 
-                    placeholder="Mensaje"
-                    type="mensaje"
-					name="mensaje"					  
-                />
-            </div>
-            <div>
-                <button className="btn-cnt">Enviar</button>
-            </div>
+            <form onSubmit={onSubmit}>
+                <div>
+                    <div className="inp">
+                        <input 
+                            placeholder="Nombre"
+                            type="username"
+                            name="userName"
+                            value={userName}
+                            onChange={onInputChange}				
+                        />
+                    </div>
+                    <div>
+                        <small className="error">{errors.userName}</small>
+                    </div>
+                </div>
+                <div>
+                    <div className="inp">
+                        <input 
+                            placeholder="Email"
+                            type="email"
+                            name="email"
+                            value={email}
+                            onChange={onInputChange} 
+                        />
+                    </div>
+                    <div>
+                        <small className="error">{errors.email}</small>
+                    </div>
+                </div>
+                <div>
+                    <div className="msg-inp">
+                        <textarea 
+                            placeholder="Mensaje"
+                            type="mensaje"
+                            name="mensaje"					  
+                        />
+                    </div>
+                    <div>
+                        <small className="error">{errors.message}</small>
+                    </div>
+                </div>
+                <div>
+                    <button className="btn-cnt">Enviar</button>
+                </div>
+            </form>
         </div>
     </div>
   )

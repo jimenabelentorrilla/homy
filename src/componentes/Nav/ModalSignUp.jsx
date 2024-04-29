@@ -11,8 +11,6 @@ import { NavLink } from "react-router-dom";
 export const ModalSignUp = ({ onClose , onSignIn }) => {
 
     const { onSubmit, onInputChange, userName, email, password, errors } = useContext(AppContext);
-
-  
   
     return (
     <>

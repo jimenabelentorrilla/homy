@@ -1,8 +1,12 @@
 import HrImg from "../../assets/hr-img.png";
 import Google from "../../assets/google.png";
 import "./Header.css";
+import { useContext } from "react";
+import { AppContext } from "../../context/AppProvider";
 
 export const Header = () => {
+
+    const { handleOpenSignUp , email, onInputChange} = useContext(AppContext);
 
   return (
     <>
@@ -18,9 +22,13 @@ export const Header = () => {
                         <input 
                             placeholder="Ingresá tu email"
                             className="input"
+                            type="email"
+                            name="email"
+                            value={email}
+                            onChange={onInputChange}
                         />
                     </div>
-                    <button className="btn-ip">Comenzar gratis</button>
+                    <button className="btn-ip" onClick={handleOpenSignUp}>Comenzar gratis</button>
                 </div>
                 <div>
                     <img className="google-btn" src={Google}/>

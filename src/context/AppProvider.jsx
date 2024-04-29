@@ -5,8 +5,27 @@ import "aos/dist/aos.css";
 
 export const AppContext = createContext();
 
-export const AppProvider = ( {children} ) => {
+export const AppProvider = ( { children } ) => {
    
+      /*Modal Sign In*/
+      const [openSignIn, setOpenSignIn] = useState(false);
+      const handleOpenSignIn = () => setOpenSignIn(true);
+      const handleCloseSignIn = () => setOpenSignIn(false);
+      
+      const onSignUp = () =>{
+          handleCloseSignIn()
+          handleOpenSignUp()
+      }
+      /*Modal Sign Up*/
+      const [openSignUp, setOpenSignUp] = useState(false);
+      const handleOpenSignUp = () => setOpenSignUp(true);
+      const handleCloseSignUp = () => setOpenSignUp(false);
+  
+      const onSignIn = () =>{
+          handleCloseSignUp()
+          handleOpenSignIn()
+      }
+
 
     /**** Funcion para inicializar AOS - animaciones*** */
     const AosInit = () => {
@@ -18,7 +37,8 @@ export const AppProvider = ( {children} ) => {
     const initialForm = {
         userName : "",
         email : "",
-        password: ""
+        password: "",
+        message: ""
     }
     
         const {formState, onInputChange } = useForm(initialForm)
@@ -26,17 +46,18 @@ export const AppProvider = ( {children} ) => {
         /*desestructuramos el form state para tener estas tres
         constantes disponibles para obtenerlas por separado*/
         /*Y tambien eso será lo que pongamos en el value*/
-        const { userName, email, password } = formState;
+        const { userName, email, password , message } = formState;
 
         const [errors, setErrors] = useState({
             userName: '',
             email: '',
-            password: ''
+            password: '',
+            message: ''
         });
         
         const validateForm = () => {
             let valid = true;
-            const newErrors = { userName: '', email: '', password: '' };
+            const newErrors = { userName: '', email: '', password: '' , message: ''};
         
             if (userName.trim() === '') {
                 newErrors.userName = 'Por favor ingresa un nombre válido';
@@ -50,6 +71,10 @@ export const AppProvider = ( {children} ) => {
         
             if (password.length < 6) {
                 newErrors.password = 'La contraseña debe tener al menos 6 caracteres';
+                valid = false;
+            }
+            if (userName.trim() === '') {
+                newErrors.message = 'Por favor ingresa tu mensaje';
                 valid = false;
             }
         
@@ -72,7 +97,16 @@ export const AppProvider = ( {children} ) => {
             userName, 
             email,
             password,
-            AosInit
+            message,
+            AosInit,
+            openSignIn,
+            handleOpenSignIn,
+            handleCloseSignIn,
+            onSignUp,
+            openSignUp,
+            handleOpenSignUp,
+            handleCloseSignUp,
+            onSignIn
 		};
 
 	return (

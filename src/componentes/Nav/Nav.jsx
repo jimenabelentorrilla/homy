@@ -1,6 +1,6 @@
 import "./Nav.css";
 import "./Modal.css";
-import { useContext, useState} from "react";
+import { useContext } from "react";
 import { AppContext } from "../../context/AppProvider";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
@@ -12,25 +12,9 @@ import { ModalSignUp } from "./ModalSignUp";
 
 export const Nav = () => {
 
-    const { AosInit } = useContext(AppContext);
-    /*Modal Sign In*/
-    const [openSignIn, setOpenSignIn] = useState(false);
-    const handleOpenSignIn = () => setOpenSignIn(true);
-    const handleCloseSignIn = () => setOpenSignIn(false);
-    
-    const onSignUp = () =>{
-        handleCloseSignIn()
-        handleOpenSignUp()
-    }
-    /*Modal Sign Up*/
-    const [openSignUp, setOpenSignUp] = useState(false);
-    const handleOpenSignUp = () => setOpenSignUp(true);
-    const handleCloseSignUp = () => setOpenSignUp(false);
-
-    const onSignIn = () =>{
-        handleCloseSignUp()
-        handleOpenSignIn()
-    }
+    const { AosInit, openSignIn, handleOpenSignIn,
+            handleCloseSignIn, onSignUp, openSignUp,
+            handleOpenSignUp, handleCloseSignUp, onSignIn } = useContext(AppContext);
    
     AosInit()
 

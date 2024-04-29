@@ -46,7 +46,7 @@
 /***form****/
 .frame-86{
     width: 544px;
-    height: 581px;
+    height: 681px;
     border-radius: 30px;
     box-shadow: 0px 4px 20px 0px #00000040;
     display: flex;
@@ -54,11 +54,11 @@
     justify-content: center;
     align-items: center;  
 }
-.flx-87{
+.flx-87, form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 16px;
+    gap: 20px;
 }
 .cnt-title{
     font-weight: 500;
