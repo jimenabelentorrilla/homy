@@ -10,7 +10,6 @@
   }
   .row-2 h2{
     font-weight: 700;
-    font-size: 48px;
     text-align: center;
   }
   .bloque-flex{
@@ -21,7 +20,6 @@
   }
   .cards-conteiner{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     height: auto;
     gap: 50px;
@@ -32,7 +30,6 @@
     border-radius: 30px;
     background-color: transparent;
     font-weight: 400;
-    font-size: 24px;
     color: var(--accent);
   }
   .ver-btn:hover{
@@ -65,20 +62,81 @@
   }
   .text-card{
     position: relative;
-    font-size: 24px;
     font-weight: 700;
     padding: 20px;
   }
+  
   .arrow-btn{
     position: relative;
     border-radius: 100px;
     width: 67px;
     height: 67px;
     background-color: var(--accent);
-    border:none;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor:pointer;
+    cursor: pointer;
   }
   
+  @media (width < 576px) {
+    .cards-conteiner{
+      flex-direction: column;
+    }
+    .row-2 h2{
+      font-size: 2.2em;
+    }
+    .ver-btn, .text-card{
+      font-size: 1.1em;
+    } 
+  }
+
+  @media (min-width: 576px) and (max-width: 767.99px){
+    .cards-conteiner{
+      flex-direction: column;
+    }
+    .row-2 h2{
+      font-size: 2.5em;
+    }
+    .ver-btn, .text-card{
+      font-size: 1.2em;
+    } 
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.99px){
+    .cards-conteiner{
+      flex-direction: column;
+    }
+    .row-2 h2{
+      font-size: 2.7em;
+    }
+    .ver-btn, .text-card{
+      font-size: 1.3em;
+    } 
+  }
+  
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .cards-conteiner{
+      flex-direction: row;
+    }
+    .row-2 h2{
+      font-size: 2.9em;
+    }
+    .ver-btn, .text-card{
+      font-size: 1.4em;
+    } 
+  }
+
+  @media (width > 1200px){
+    .cards-conteiner{
+      flex-direction: row;
+    }
+    .row-2 h2{
+      font-size: 3em;
+    }
+    .ver-btn, .text-card{
+      font-size: 1.5em;
+    }
+  }
+    

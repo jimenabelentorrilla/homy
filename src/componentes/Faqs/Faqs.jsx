@@ -69,7 +69,7 @@ export const Faqs = () => {
                         />
                     </div>
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+                <div className="cat-cnt" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
                     <img className="cat-img" src={Cat}/>
                 </div>
             </div>

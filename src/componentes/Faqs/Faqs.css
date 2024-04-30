@@ -1,11 +1,13 @@
 .bg-fq{
- background-color: #FFEC8599;
- height: auto;
- padding: 80px;
+    background-color: #FFEC8599;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .faqs-flex{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
@@ -13,19 +15,18 @@
 .accordion-flex{
     display: flex;
     flex-direction: column;
-    gap:25px;
+    gap: 25px;
 }
 .accordion{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:40px;
+    gap: 40px;
     height: auto;
-   
 }
 .accordion h2{
     color: #383838;
-    font-size: 48px;
+    font-size: 3em;
     font-weight: 700;
 }
 .card-acc-flex{
@@ -33,10 +34,11 @@
     flex-direction: column;
     background-color: #FFFEF8;
     border-radius: 20px;
+    width: 100%;
 }
 .card-acc{
-    width: 630px;
-    height: 83px;   
+    width: 93%;
+    height: 13.17vh;  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,22 +46,84 @@
     box-shadow: 0px 4px 16px 0px #0000000F;
 }
 .card-acc p{
-    font-size: 20px;
+    font-size: 1.25em;
     color: #383838;
     font-weight: 700;
 }
 .card-acc img:hover{
     cursor: pointer;
 }
-.cat-img{
-    display: flex;
-}
 .prg-acc{
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 400;
     color:#B6B6B6;
     width: 628px;
     line-height: 24.55px;
     padding: 20px;
-   
 }
+.cat-cnt{
+    display: flex;
+    justify-content: center;
+}
+
+@media (width < 576px) {
+    .bg-fq{
+        padding: 10px;
+    }
+    .faqs-flex{
+        flex-direction: column;
+    }
+    .cat-img{
+        display: none;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.99px){
+    .bg-fq{
+        padding: 20px;
+    }
+    .faqs-flex{
+        flex-direction: column;
+    }
+    .cat-img{
+        display: none;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.99px){
+    .bg-fq{
+        padding: 30px;
+    }
+    .faqs-flex{
+        flex-direction: column;
+    }
+    .cat-img{
+        display: none;
+    }
+  }
+  
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .bg-fq{
+        padding: 60px;
+    } 
+    .faqs-flex{
+        flex-direction: column;
+    }
+    .cat-img{
+        display: none;
+    }
+  }
+
+  @media (width > 1200px){
+    .bg-fq{
+        padding: 80px;
+    }
+    .faqs-flex{
+        flex-direction: row;
+    }
+    .cat-img{
+        display: flex;
+        width: 70%;
+    }
+  }

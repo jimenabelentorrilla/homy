@@ -1,13 +1,9 @@
-import { useState } from "react";
 import "./Our.css";
 import BgCard from "../../assets/Subtract.png";
 import Img1 from "../../assets/Frame 70.png";
 import Img2 from "../../assets/Frame 70 (1).png";
 import Img3 from "../../assets/Frame 70(3).png";
 import Arrow from "../../assets/arrow_forward.png";
-import Img4 from "../../assets/accesorios.jpg";
-import Img5 from "../../assets/juguetes.jpg";
-import Img6 from "../../assets/higiene.png";
 
 const CardsProducts = ( { img , title } ) => {
   return (
@@ -32,8 +28,6 @@ const CardsProducts = ( { img , title } ) => {
 
 export const Our = () => {
 
-    const [verMas, setVerMas] = useState(false);
-
   return (
     <div className="row-2" id="productos">
         <h2 data-aos="fade-down" data-aos-duration="1500"   data-aos-delay="300">Explorá nuestros productos</h2>
@@ -51,28 +45,9 @@ export const Our = () => {
                     img={Img3}
                     title="Rastreadores"
                 />
-            </div>
-                {
-                    verMas &&   <>
-                                    <div className="cards-conteiner">
-                                        <CardsProducts 
-                                            img={Img4}
-                                            title="Accesorios"
-                                        />
-                                        <CardsProducts 
-                                            img={Img5}
-                                            title="Juguetes"
-                                        />
-                                        <CardsProducts 
-                                            img={Img6}
-                                            title="Higiene"
-                                        />
-                                    </div>
-                                </>
-                }
-            
+            </div>            
             <div>
-                <button className="ver-btn" onClick={() =>{ setVerMas( prev => !prev); }}>{ verMas ? "Ver menos" : "Ver más" }</button> 
+                <button className="ver-btn"> Ver más</button> 
             </div>
         </div>   
     </div>

@@ -1,22 +1,21 @@
 .section-3{
     display: flex;
-    flex-direction: row;
-    height: 554px;
-    gap:90px;
+    gap: 90px;
     padding: 102px 0px;
 }
 .box-text{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 30px;
 }
 
 .box-text h2{
     color:#1E1E1E;
-    font-size: 42px;
     font-weight: 700;
     margin: 0;
 }
+
 .items-flex{
     display: flex;
     flex-direction: column;
@@ -40,14 +39,11 @@
 }
 .item-paragraph{
     font-weight: 400;
-    font-size: 24px;
     color:#1E1E1E;
-
 }
 .sct-3-btn{
     color:#FFFEF8;
     font-weight: 700;
-    font-size: 24px;
     background-color: #FFCA61;
     padding: 16px 24px;
     border-radius: 30px;
@@ -58,3 +54,96 @@
     transition: ease-in .2s;
     cursor: pointer;
 }
+@media (width < 576px) {
+    .section-3{
+        flex-direction: column;
+    }
+    .img-como{
+        display: none;
+    }
+    .box-text h2{
+        font-size: 2.125em;
+    }
+    .item-paragraph{
+        font-size: 1.1em;
+    }
+    .sct-3-btn{
+        font-size: 1em;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.99px){
+    .section-3{
+        flex-direction: column;
+    }
+    .img-como{
+        display: none;
+    }
+    .box-text h2{
+        font-size: 2.325em;
+    }
+    .item-paragraph{
+        font-size: 1.2em;
+    }
+    .sct-3-btn{
+        font-size: 1.2em;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.99px){
+    .section-3{
+        flex-direction: column;
+    }
+    .img-como{
+        display: none;
+    }
+    .box-text h2{
+        font-size: 2.425em;
+    }
+    .item-paragraph{
+        font-size: 1.3em;
+    }
+    .sct-3-btn{
+        font-size: 1.3em;
+    }
+  }
+  
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .section-3{
+        flex-direction: column;
+    }
+    .img-como{
+        display: none;
+    }
+    .box-text h2{
+        font-size: 2.525em;
+    }
+    .item-paragraph{
+        font-size: 1.4em;
+    }
+    .sct-3-btn{
+        font-size: 1.4em;
+    }
+    
+  }
+
+  @media (width > 1200px){
+    .section-3{
+        flex-direction: row;
+    }
+    .img-como{
+        display: flex;
+    }
+    .box-text h2{
+        font-size: 2.625em;
+    }
+    .item-paragraph{
+        font-size: 1.5em;
+    }
+    .sct-3-btn{
+        font-size: 1.5em;
+    }
+    
+  }
+    

@@ -1,7 +1,6 @@
 #root {
   margin: 0 auto;
-  padding: 1rem;
-  max-width: 1280px; 
+  padding: 1rem; 
   /*colors*/
   --accent: #FFCA61;
   --primary: #FFCA61;

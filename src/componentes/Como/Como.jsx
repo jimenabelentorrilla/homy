@@ -26,7 +26,7 @@ export const Como = () => {
 
   return (
     <div className="section-3">
-        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+        <div className="img-como" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
             <img src={ComoImg}/>
         </div>
         <div className="box-text" id="como" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">

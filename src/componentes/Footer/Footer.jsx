@@ -8,8 +8,8 @@ export const Footer = () => {
   return (
     <div className="ft-cont">
         <div className="ft-flex">
-            <div>
-                <a href="#"><img src={Logo} /></a>
+            <div className="cnt-logo-ft">
+                <img src={Logo} />
             </div>
             <div className="icon-ft-flex">
                 <div className="icon-ft">
