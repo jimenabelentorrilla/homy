@@ -7,7 +7,7 @@ import Arrow from "../../assets/arrow_forward.png";
 
 const CardsProducts = ( { img , title } ) => {
   return (
-    <div>
+    <div className="bg-card-flex">
         <div className="bg-card">
             <img src={BgCard}/>
         </div>

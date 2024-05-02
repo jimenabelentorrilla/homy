@@ -13,11 +13,13 @@ export const Header = () => {
         <div className="header">
             <div className="hr-lf" data-aos="fade-right" data-aos-duration="1500"   data-aos-delay="300">
                 <div className="hr-text"> 
-                    <h1><span>Conectate</span> con tus mascotas</h1>
-                    <p>Rompemos las barreras de la distancia para que puedas interactuar con tu mascota estés donde estés.<br/> 
-                    ¡Explorá una nueva forma de cuidar y compartir momentos incluso cuando no estás en casa!</p>
+                    <h1><span>Conectate</span> con tus<br /> mascotas</h1>
+                    <p>Rompemos las barreras de la distancia para que puedas<br/> 
+                        interactuar con tu mascota estés donde estés.<br/> 
+                        ¡Explorá una nueva forma de cuidar y compartir momentos<br/> 
+                        incluso cuando no estás en casa!</p>
                 </div>
-                <div>
+                <div className="pos-btn">
                     <div className="input-cnt">
                         <input 
                             placeholder="Ingresá tu email"

@@ -2,6 +2,7 @@
     background-color: #FFEC8599;
     height: auto;
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +10,8 @@
 .faqs-flex{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
+    align-items: flex-center;
+    flex-direction: column;
 }
 .accordion-flex{
     display: flex;
@@ -25,16 +26,17 @@
     height: auto;
 }
 .accordion h2{
-    color: #383838;
-    font-size: 3em;
+    color: #383838;    
     font-weight: 700;
 }
+
 .card-acc-flex{
     display: flex;
     flex-direction: column;
     background-color: #FFFEF8;
     border-radius: 20px;
-    width: 100%;
+    box-shadow: 0px 4px 16px 0px #0000000F;
+    max-width: 100%;
 }
 .card-acc{
     width: 93%;
@@ -43,87 +45,101 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    box-shadow: 0px 4px 16px 0px #0000000F;
+   
 }
 .card-acc p{
-    font-size: 1.25em;
     color: #383838;
     font-weight: 700;
 }
 .card-acc img:hover{
     cursor: pointer;
 }
+.cnt-ques{
+    width: 60vw;
+}
 .prg-acc{
-    font-size: 1.125em;
     font-weight: 400;
     color:#B6B6B6;
-    width: 628px;
     line-height: 24.55px;
     padding: 20px;
+    width: 100%;
 }
-.cat-cnt{
-    display: flex;
-    justify-content: center;
+
+.cat-img{
+    display: none;
 }
 
 @media (width < 576px) {
-    .bg-fq{
-        padding: 10px;
+    .accordion h2{
+        font-size: 2.4em;
     }
-    .faqs-flex{
-        flex-direction: column;
+    .card-acc p{
+        font-size: 0.9em;
     }
-    .cat-img{
-        display: none;
+    .prg-acc{
+        font-size: 0.8em;
     }
   }
 
   @media (min-width: 576px) and (max-width: 767.99px){
-    .bg-fq{
-        padding: 20px;
+    .accordion h2{
+        font-size: 2.6em;
     }
-    .faqs-flex{
-        flex-direction: column;
+    .card-acc p{
+        font-size: 1em;
     }
-    .cat-img{
-        display: none;
-    }
+    .prg-acc{
+        font-size: 1em;
+    } 
   }
   
   @media (min-width: 768px) and (max-width: 991.99px){
-    .bg-fq{
-        padding: 30px;
+    .accordion h2{
+        font-size: 2.6em;
     }
-    .faqs-flex{
-        flex-direction: column;
+    .card-acc p{
+        font-size: 1.2em;
     }
-    .cat-img{
-        display: none;
+    .prg-acc{
+        font-size: 1em;
     }
   }
   
   
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    .bg-fq{
-        padding: 60px;
-    } 
-    .faqs-flex{
-        flex-direction: column;
+    .accordion h2{
+        font-size: 2.8em;
     }
-    .cat-img{
-        display: none;
+    .card-acc p{
+        font-size: 1.25em;
+    }
+    .prg-acc{
+        font-size: 1.025em;
     }
   }
 
   @media (width > 1200px){
-    .bg-fq{
-        padding: 80px;
-    }
+    
     .faqs-flex{
         flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
     }
     .cat-img{
         display: flex;
         width: 70%;
+    }
+    .cat-cnt{
+        display: flex;
+        justify-content: center;
+    }
+    .accordion h2{
+        font-size: 3em;
+    }
+    .card-acc p{
+        font-size: 1.25em;
+    }
+    .prg-acc{
+        font-size: 1.125em;
     }
   }

@@ -21,7 +21,7 @@ const LineAcc = ( { question , answer }) => {
                 <img src={Arrow} onClick={handleClick}/>  
             </div>    
             {
-                mostrar && <div>
+                mostrar && <div className="cnt-ques">
                                 <BloqueAccordion answer={answer} />
                             </div>
             } 
@@ -34,9 +34,7 @@ const BloqueAccordion = ({ answer }) => {
 
    return (
     <>
-        <div>
-            <p className="prg-acc">{answer}</p>
-        </div>
+        <p className="prg-acc">{answer}</p>
     </>
   )
 }
