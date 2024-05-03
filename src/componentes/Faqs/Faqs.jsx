@@ -21,9 +21,7 @@ const LineAcc = ( { question , answer }) => {
                 <img src={Arrow} onClick={handleClick}/>  
             </div>    
             {
-                mostrar && <div className="cnt-ques">
-                                <BloqueAccordion answer={answer} />
-                            </div>
+                mostrar && <BloqueAccordion answer={answer} /> 
             } 
         </div>
     </>
