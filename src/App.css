@@ -1,18 +1,22 @@
 #root {
   margin: 0 auto;
   padding: 1rem;
-  max-width: 1470px;
+ 
   overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
-  line-height: 1.5;
-  background-color: #FDFDFD;
-  scroll-behavior: smooth;
+ 
   
   /*colors*/
   --accent: #FFCA61;
   --primary: #FFCA61;
   --white: #FFFFFF;
   --black: #383838;
+}
+:root {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  background-color: #FDFDFD;
+  scroll-behavior: smooth;
+  max-width: 1470px;
 }
 
 

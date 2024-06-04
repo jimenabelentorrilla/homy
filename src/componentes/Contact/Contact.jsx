@@ -66,6 +66,21 @@ const Form = () => {
   )
 }
 
+const icons = [
+    {
+        "id": "1",
+        "icon": IconWp
+    },
+    {
+        "id": "2",
+        "icon": IconIg
+    },
+    {
+        "id": "3",
+        "icon": IconYt    
+    }
+]
+
 export const Contact = () => {
   return (
     <div className="cnt-cnt">
@@ -76,26 +91,20 @@ export const Contact = () => {
                     <p>En Homy, valoramos tu feedback y estamos aquí para responder a todas tus preguntas.<br /> ¡No dudes en ponerte en contacto con nosotros!</p>
                 </div>
                 <div className="icons-flex">
-                    <div>
-                        <a href="#">
-                            <img src={IconWp} />
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img src={IconIg} />
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img src={IconYt} />
-                        </a>
-                    </div>
+                    {
+                        icons.map(icon => {
+                            return (
+                                <div key={icon.id}>
+                                    <a href="#" target="_blank" >
+                                        <img src={icon.icon} />
+                                    </a>
+                                </div>
+                        )})
+                    }                    
                 </div>
-            </div>
-            
-            <div>
-                <a href="#" className="sp-cn"><span >support@homy.com</span></a>
+                <div>
+                    <a href="#" className="sp-cn"><span >support@homy.com</span></a>
+                </div>
             </div>
         </div>             
         <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">

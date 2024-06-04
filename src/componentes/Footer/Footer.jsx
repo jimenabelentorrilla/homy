@@ -4,23 +4,39 @@ import IconIg from "../../assets/icon-ig-00.png";
 import IconWp from "../../assets/icon-wp-00.png";
 import IconYt from "../../assets/icon-yt-00.png";
 
+const iconsBl = [
+    {
+        "id": "1",
+        "icon": IconWp
+    },
+    {
+        "id": "2",
+        "icon": IconIg
+    },
+    {
+        "id": "3",
+        "icon": IconYt    
+    }
+]
+
 export const Footer = () => {
   return (
     <div className="ft-cont">
         <div className="ft-flex">
             <div className="cnt-logo-ft">
-                <img src={Logo} />
+            <a href="#nav"><img src={Logo} /></a>
             </div>
             <div className="icon-ft-flex">
-                <div className="icon-ft">
-                    <img src={IconWp} />
-                </div>
-                <div className="icon-ft">
-                    <img src={IconIg} />
-                </div>
-                <div className="icon-ft">
-                    <img src={IconYt} />
-                </div>
+                {
+                    iconsBl.map(icon => {
+                        return (
+                            <div key={icon.id} className="icon-ft">
+                                <a href="#" target="_blank" >
+                                    <img src={icon.icon} />
+                                </a>
+                            </div>
+                    )})
+                }                
             </div>
         </div>
         <div className="ft-an-flex"> 

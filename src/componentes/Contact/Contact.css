@@ -1,31 +1,35 @@
 .cnt-cnt{
-    gap: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+    justify-content: center;
+    gap: 2em;
+    min-height: 60.75em;
+    width: 80%;
+    margin-inline: auto;
 }
 .cnt-flx{
     display: flex;
     flex-direction: column;
-    height: 70vh;
-    justify-content: space-between;
+    height: 37.5em;
+    justify-content: center;
+    gap: 2em;
+
 }
 .asyd{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5em;
     max-width: 90%;
 }
 .bloque-text h3{
     font-weight: 700;
-    line-height: 65.47px;
     color: #383838;
+    margin: 0;
+    line-height: 1.8;
 }
 .bloque-text p{
     font-weight: 400;
     color: #383838;
-    line-height: 32.74px;
     width: 82%;
 }
 .sp-cn{
@@ -36,7 +40,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 26px;
+    gap: 1.625em;
 }
 
 /***form****/
@@ -49,26 +53,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 12px;  
+    padding: 1.875em 0.75em;  
 }
 .flx-87, form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25em;
 }
 .cnt-title{
     font-weight: 500;
     color:#383838;
-    margin-bottom: 16px;
+    margin-bottom: 1em;
     margin-top: 0;
 }
 .inp ,.msg-inp{
-    width: 484px;  border: 1px solid #F1F1F1;
+    width: 484px;  /*********************ARREGLAR!!!*********************/
+    border: 1px solid #F1F1F1;
     border-radius: 20px;
 }
 .inp input, .msg-inp textarea{
-    padding: 14px;
+    padding: 0.875em;
     outline: none;
     border: none;
     font-weight: 500;
@@ -82,9 +87,9 @@
 .btn-cnt{
     background-color: #FFCA61;
     border-radius: 30px;
-    padding: 10px 24px;
+    padding: 0.625em 1.5em;
     width: 100%;
-    height: 65px;
+    height: 65px;  /****modificar**/
     border: none;
     font-size: 1.25em;
     color: #1E1E1E;
@@ -103,16 +108,13 @@
         font-size: 1em;
     }
     .cnt-title{
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
     .bloque-text h3{
-        font-size: 2.6em;
+        font-size: 2em;
     }
-    .bloque-text p{
-        font-size: 1.2em;
-    }
-    .sp-cn{
-        font-size: 1.2em;
+    .bloque-text p ,.sp-cn{
+        font-size: 1em;
     }
 }
   
@@ -122,20 +124,18 @@
         flex-direction: column;
     }
     .inp input, .msg-inp textarea{
-        font-size: 1.1em;
+        font-size: 1em;
     }
     .cnt-title{
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
     .bloque-text h3{
-        font-size: 2.7em;
+        font-size: 2.3em;
     }
-    .bloque-text p{
+    .bloque-text p ,.sp-cn{
         font-size: 1.2em;
     }
-    .sp-cn{
-        font-size: 1.2em;
-    }
+   
   }
   
   @media (min-width: 768px) and (max-width: 991.99px){
@@ -143,18 +143,15 @@
         flex-direction: column;
     }
     .inp input, .msg-inp textarea{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .cnt-title{
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
     .bloque-text h3{
-        font-size: 2.8em;
+        font-size: 2.4em;
     }
-    .bloque-text p{
-        font-size: 1.3em;
-    }
-    .sp-cn{
+    .bloque-text p ,.sp-cn{
         font-size: 1.3em;
     }
   }
@@ -165,23 +162,37 @@
         flex-direction: column;
     }
     .inp input, .msg-inp textarea{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .cnt-title{
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
     .bloque-text h3{
-        font-size: 2.9em;
+        font-size: 2.5em;
     }
-    .bloque-text p{
-        font-size: 1.4em;
-    }
-    .sp-cn{
+    .bloque-text p ,.sp-cn{
         font-size: 1.4em;
     }
   }
+  @media (min-width: 1200px) and (max-width: 1399.99px) { 
+    .cnt-cnt{
+        flex-direction: row;
+   }
+   .inp input, .msg-inp textarea{
+        font-size: 1em;
+   }
+   .cnt-title{
+        font-size: 1.8em;
+   }
+   .bloque-text h3{
+        font-size: 2.5em;
+    }
+    .bloque-text p , .sp-cn{
+        font-size: 1.4em;
+   }
+  }
 
-  @media (width > 1200px){
+  @media (width > 1400px){
    .cnt-cnt{
         flex-direction: row;
    }
@@ -194,10 +205,7 @@
    .bloque-text h3{
         font-size: 3em;
     }
-   .bloque-text p{
-        font-size: 1.5em;
-   }
-   .sp-cn{
+    .bloque-text p , .sp-cn{
         font-size: 1.5em;
    }
 }
