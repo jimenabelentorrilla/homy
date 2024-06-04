@@ -144,6 +144,7 @@
   @media (min-width: 1200px) and (max-width: 1399.98px) { 
     .cards-conteiner{
       flex-direction: row;
+      gap:1em;
     }
     .row-2 h2{
       font-size: 2.6em;

@@ -1,25 +1,23 @@
 .section-3{
     display: flex;
-    padding: 102px 0px;
+    min-height:  51.875em;
     justify-content: space-between;
     width: 95%;
     gap: 2em;
 }
 .img-como{
-    max-width: 100%; 
-    height: auto; 
     display: flex; 
     justify-content: center; 
     align-items: center;
 }
 .img-como img{
-    max-width: 100%;
-    height: auto;
+    max-width: 90%;
+    display: block;
 }
 .box-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     gap: 2em;
 }
 
@@ -41,8 +39,8 @@
     gap: 1em;
 }
 .item-circle{
-    width: 50px;
-    height: 50px;
+    width: 3.125em;
+    height: 3.125em;
     border-radius: 50px;
     background-color:#FFFEF8; 
     box-shadow: 0px 4px 16px 0px #00000029;
@@ -58,7 +56,7 @@
     color:#FFFEF8;
     font-weight: 700;
     background-color: #FFCA61;
-    padding: 16px 24px;
+    padding: 1em 1.5em;
     border-radius: 30px;
     border: none;
 }
@@ -70,25 +68,30 @@
 @media (width < 576px) {
     .section-3{
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
     .img-como{
         display: none;
     }
     .box-text h2{
-        font-size: 2.125em;
+        font-size: 1.5em;
     }
     .item-paragraph{
-        font-size: 1.1em;
+        font-size: 1em;
     }
     .sct-3-btn{
         font-size: 1em;
+    }
+    .items-flex{
+        gap:1.2em;
     }
   }
 
   @media (min-width: 576px) and (max-width: 767.99px){
     .section-3{
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
     .img-como{
@@ -108,6 +111,7 @@
   @media (min-width: 768px) and (max-width: 991.99px){
     .section-3{
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
     .img-como{
@@ -127,25 +131,40 @@
   
   @media (min-width: 992px) and (max-width: 1199.98px) { 
     .section-3{
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
     }
     .img-como{
-        display: none;
+        display: flex;
     }
     .box-text h2{
-        font-size: 2.525em;
+        font-size: 1.8em;
     }
     .item-paragraph{
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
     .sct-3-btn{
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
-    
+  }
+  @media (min-width: 1200px) and (max-width: 1399.99px) { 
+    .section-3{
+        flex-direction: row;
+    }
+    .img-como{
+        display: flex;
+    }
+    .box-text h2{
+        font-size: 2em;
+    }
+    .item-paragraph{
+        font-size: 1.3em;
+    }
+    .sct-3-btn{
+        font-size: 1.2em;
+    }
   }
 
-  @media (width > 1200px){
+  @media (width > 1400px){
     .section-3{
         flex-direction: row;
     }
@@ -161,6 +180,5 @@
     .sct-3-btn{
         font-size: 1.5em;
     }
-    
   }
     
