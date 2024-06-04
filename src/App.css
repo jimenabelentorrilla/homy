@@ -1,7 +1,12 @@
 #root {
   margin: 0 auto;
   padding: 1rem;
-  overflow-x: hidden; 
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  background-color: #FDFDFD;
+  scroll-behavior: smooth;
+  
   /*colors*/
   --accent: #FFCA61;
   --primary: #FFCA61;
@@ -9,16 +14,7 @@
   --black: #383838;
 }
 html {
-  font-family: "Nunito", sans-serif;
-  line-height: 1.5;
-  background-color: #FDFDFD;
-  scroll-behavior: smooth;
   max-width: 90%;
-  margin: 0 auto;
+  margin-inline: auto;
 }
-.contenedor{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
+

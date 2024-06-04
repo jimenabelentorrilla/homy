@@ -6,7 +6,9 @@ import { AppContext } from "../../context/AppProvider";
 
 export const Header = () => {
 
-    const { handleOpenSignUp , email, onInputChange} = useContext(AppContext);
+    const { handleOpenSignUp , email, onInputChange, AosInit} = useContext(AppContext);
+
+    AosInit()
 
   return (
     <>

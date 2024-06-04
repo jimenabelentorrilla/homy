@@ -22,7 +22,7 @@ export const Nav = () => {
     <>
         <div className="cnt-nav" data-aos="fade-down" data-aos-duration="2000">
             <div>
-                <NavLink to="/"><img src={Logo}/></NavLink>
+                <NavLink to="/"><img className="logo" src={Logo}/></NavLink>
             </div>
             <ul className="ul-flex">
                 <a href="#productos"><li>Productos</li></a>
@@ -49,7 +49,6 @@ export const Nav = () => {
                     />
                </Box>
         </Modal>  
-          
         <Modal
             open={openSignUp}
             aria-labelledby="modal-modal-title"
@@ -61,7 +60,6 @@ export const Nav = () => {
                     />
                </Box>
         </Modal>  
-       
     </>
   )
 }

@@ -3,14 +3,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 98px;
+    min-height: 6.125rem;
     border-bottom: 1px solid #EDEDED;
     justify-content: space-between;
     width: 100%;
   }
   .ul-flex {
     flex-direction: row;
-    gap: 50px;
+    gap: 3.125em;
     list-style-type: none;
   }
   .ul-flex li, .cnt-flex p, .cnt-flex button{
@@ -21,18 +21,22 @@
   .ul-flex a{
     text-decoration: none;
   }
+  .logo{
+    max-width: 100%;
+    display: block;
+  }
   .cnt-flex{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 0.625em;
     list-style-type: none;
   }
   .cnt-flex a{
     text-decoration: none;
   }
   .cnt-flex button{
-    padding: 14px 24px;
+    padding: 1em;
     border-radius: 30px;
     background-color: var(--accent);
     border: none;
@@ -85,8 +89,17 @@
       font-size: 1.15em;
     }
   }
+  @media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .ul-flex {
+      gap: 20px;
+      display:flex;
+    }
+    .ul-flex li, .cnt-flex p, .cnt-flex button{
+      font-size: 1.15em;
+    }
+  }
 
-  @media (width > 1200px){
+  @media (width > 1400px){
     .ul-flex {
       gap: 50px;
       display: flex;
