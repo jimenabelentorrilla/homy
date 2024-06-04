@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 88vw;
+    width: 80%;
+    margin-inline: auto;
     align-items: center;
     min-height: 45rem;
   }

@@ -1,52 +1,40 @@
 import "./Faqs.css";
 import Cat from "../../assets/cat.png";
-import Arrow from "../../assets/expand_more.png";
-import { useState } from "react";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 const LineAcc = ( { question , answer }) => {
 
-    const [mostrar, setMostrar] = useState(false);
-
-    const handleClick = () =>{
-        setMostrar(
-            prev => !prev
-        );
-    }
-
   return (
     <>
-        <div className="card-acc-flex">
-            <div className="card-acc">
-                <p>{question}</p>
-                <img src={Arrow} onClick={handleClick}/>  
-            </div>    
-            {
-                mostrar && <BloqueAccordion answer={answer} /> 
-            } 
-        </div>
+        <Accordion>
+            <AccordionSummary
+                className="card-acc"
+                aria-controls="panel1-content"
+                expandIcon={<ExpandMoreIcon />}
+            >
+                {question}
+            </AccordionSummary>
+                <AccordionDetails className="prg-acc">
+                    {answer}
+                </AccordionDetails>
+        </Accordion>
     </>
   )
 }
-
-const BloqueAccordion = ({ answer }) => {
-
-   return (
-    <>
-        <p className="prg-acc">{answer}</p>
-    </>
-  )
-}
-
 
 export const Faqs = () => {
 
   return (
-    <>
+        <>
         <div className="bg-fq" id="faqs">
             <div className="faqs-flex">
                 <div className="accordion" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
                     <h2>Preguntas frecuentes</h2>
-                    <div className="accordion-flex">
+                    <div>
                         <LineAcc 
                             question="¿Cómo funciona la instalación de las cámaras PetCam?"
                             answer="La instalación es fácil y rápida. Sigue las instrucciones proporcionadas en el manual incluido o consulta nuestra guía en línea para obtener ayuda paso a paso."

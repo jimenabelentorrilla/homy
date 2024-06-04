@@ -2,7 +2,8 @@
     display: flex;
     min-height:  51.875em;
     justify-content: space-between;
-    width: 95%;
+    width: 80%;
+    margin-inline: auto;
     gap: 2em;
 }
 .img-como{

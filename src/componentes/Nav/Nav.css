@@ -6,7 +6,8 @@
     min-height: 6.125rem;
     border-bottom: 1px solid #EDEDED;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
+    margin-inline: auto;
   }
   .ul-flex {
     flex-direction: row;

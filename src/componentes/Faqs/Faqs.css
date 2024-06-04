@@ -1,139 +1,111 @@
+.card-acc{
+    height: 5em;
+}
 .bg-fq{
     background-color: #FFEC8599;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 160vh;
+    min-height: 43.75em;
+    width: 100%;
+    margin-inline: auto;
 }
+
 .faqs-flex{
     display: flex;
     justify-content: center;
     align-items: flex-center;
     flex-direction: column;
 }
-.accordion-flex{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
 
 .accordion{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 3em;
+    max-width: 30em;
+    margin-inline: auto;
 }
 .accordion h2{
     color: #383838;    
     font-weight: 700;
 }
 
-.card-acc-flex{
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFEF8;
-    border-radius: 20px;
-    box-shadow: 0px 4px 16px 0px #0000000F;
-}
 .card-acc{
-    /**width: 628px;*/
-    height: 83px;  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-}
-.card-acc p{
     color: #383838;
     font-weight: 700;
 }
-.card-acc img:hover{
-    cursor: pointer;
-}
+
 .prg-acc{
     font-weight: 400;
     color:#B6B6B6;
-    line-height: 24.55px;
-    padding: 20px;
-    /*width: 628px;**/
 }
 
 .cat-img{
     display: none;
 }
+.accordion h2{
+    font-size: 2.5em;
+}
+.card-acc, .prg-acc {
+    font-size: 1em;
+}
 
 @media (width < 576px) {
     .accordion h2{
-        font-size: 2.4em;
+        font-size: 1.8em;
     }
-    .card-acc p , .prg-acc{
+    .card-acc , .prg-acc{
         font-size: 0.8em;
     }
-    .accordion-flex{
-        width: 85vw;
-    } 
   }
 
   @media (min-width: 576px) and (max-width: 767.99px){
     .accordion h2{
-        font-size: 2.6em;
+        font-size: 2.3em;
     }
-    .card-acc p ,.prg-acc{
-        font-size: 1em;
+    .card-acc ,.prg-acc{
+        font-size: 0.8em;
     }
-    .accordion-flex{
-        width: 75vw;
-    } 
   }
   
   @media (min-width: 768px) and (max-width: 991.99px){
     .accordion h2{
-        font-size: 2.6em;
+        font-size: 2.4em;
     }
-    .card-acc p , .prg-acc{
-        font-size: 1.1em;
-    }
-    .accordion-flex{
-        width: 65vw;
+    .card-acc , .prg-acc{
+        font-size: 0.9em;
     }
   }
   
-  
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    .accordion h2{
-        font-size: 2.8em;
-    }
-    .card-acc p, .prg-acc {
-        font-size: 1.25em;
-    }
-    .accordion-flex{
-        width: 50vw;
-    }
-  }
 
-  @media (width > 1200px){
-    
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
     .faqs-flex{
         flex-direction: row;
         align-items: flex-start;
-        gap: 5%;
+        gap: 1em;
     }
     .cat-img{
-        display: flex;
-        width: 70%;
+        display: block;
+        max-width: 70%;
     }
     .cat-cnt{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
-    .accordion h2{
-        font-size: 3em;
+  }
+  @media (width > 1400px){
+    .faqs-flex{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1em;
     }
-    .card-acc p ,.prg-acc{
-        font-size: 1.25em;
+    .cat-img{
+        display: block;
+        max-width: 70%;
     }
-    .accordion-flex{
-        width: 40vw;
+    .cat-cnt{
+        display: flex;
+        justify-content: flex-end;
     }
   }

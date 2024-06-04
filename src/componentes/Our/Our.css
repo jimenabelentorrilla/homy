@@ -7,6 +7,8 @@
     justify-content: center;
     gap: 3.75em;
     min-height: 49.375em;
+    width: 80%;
+    margin-inline: auto;
   }
   .row-2 h2{
     font-weight: 700;
