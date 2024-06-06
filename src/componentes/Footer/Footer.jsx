@@ -18,6 +18,51 @@ const iconsBl = [
         "icon": IconYt    
     }
 ]
+const footerSections = [
+    {
+      title: "homy",
+      links: [
+        { 
+          href: "#productos", 
+          name: "productos" 
+        },
+        { 
+          href: "#como", 
+          name: "como funciona" 
+        },
+        { 
+          href: "#faqs", 
+          name: "faqs" 
+        }
+      ]
+    },
+    {
+        title: "contacto",
+        links: [
+          { 
+            href: "#", 
+            name: "soporte" 
+          },
+          { 
+            href: "#", 
+            name: "centro de ayuda" 
+          }
+        ]
+      },
+      {
+        title: "ayuda",
+        links: [
+          { 
+            href: "#", 
+            name: "terminos y condiciones" 
+          },
+          { 
+            href: "#", 
+            name: "politica de privacidad" 
+          }
+        ]
+      }
+    ]
 
 export const Footer = () => {
   return (
@@ -39,23 +84,18 @@ export const Footer = () => {
                 }                
             </div>
         </div>
-        <div className="ft-an-flex"> 
-            <ul className="ft-ul">
-                <a href="#" className="an-bold"><li>Homy</li></a>
-                <a href="#productos" className="an-clr"><li>Productos</li></a>
-                <a href="#como" className="an-clr"><li>Como funciona</li></a>
-                <a href="#faqs" className="an-clr"><li>Faqs</li></a>
-            </ul>
-            <ul className="ft-ul">
-                <li className="an-bold">Contacto</li>
-                <li>Soporte</li>
-                <li>Centro de ayuda</li>
-            </ul>
-            <ul className="ft-ul">
-                <li className="an-bold">Ayuda</li>
-                <li>Terminos y condiciones</li>
-                <li>Politica de privacidad</li>
-            </ul>
+        <div className="ft-an-flex">
+            { 
+              footerSections.map(section => {
+                return (
+                    <ul className="ft-ul" key={section.title}>
+                        <a href="#" className="an-bold"><li>{section.title}</li></a>
+                        { section.links.map(link => (
+                            <a key={link.name} href={link.href} className="an-clr"><li>{link.name}</li></a>
+                      ))}
+                    </ul>
+                )})
+            }
         </div>
     </div>
   )

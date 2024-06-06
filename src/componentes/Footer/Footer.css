@@ -1,6 +1,6 @@
 .ft-cont{
     display: flex;
-    max-width: 80%;
+    max-width: 85%;
     margin-inline: auto;
     justify-content: space-between;
     padding: 4.375em 0em;
@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    text-transform: capitalize;
 }
 .ft-ul li{
     cursor: pointer;

@@ -1,10 +1,8 @@
 .section-3{
     display: flex;
     min-height:  51.875em;
-    justify-content: space-between;
-    width: 80%;
-    margin-inline: auto;
-    gap: 2em;
+    justify-content: space-evenly;
+    width: 100%;
 }
 .img-como{
     display: flex; 

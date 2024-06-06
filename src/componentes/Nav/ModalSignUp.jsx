@@ -13,9 +13,10 @@ export const ModalSignUp = ({ onClose , onSignIn }) => {
     const { onSubmit, onInputChange, userName, email, password, errors } = useContext(AppContext);
   
     return (
-    <>
+    <>  
+        <div className="mw">
             <form onSubmit={onSubmit} className="tarjeta">
-                <h2>Crear una cuenta</h2>
+                <h2 className="title-tarj">Crear una cuenta</h2>
                 <div className="btn-google">
                     <img src={Google}/>
                     <p>Ingresar con Google</p>
@@ -75,11 +76,11 @@ export const ModalSignUp = ({ onClose , onSignIn }) => {
                     <button className="btn-rgs">Registrarse</button>
                 </div>
                 <div className="color-p-span">
-
                     <p>¿Ya tenés una cuenta? <NavLink to="/signIn"><span onClick={onSignIn}>Iniciar sesión</span> </NavLink></p> 
                 </div>
                 <NavLink to="/"><p onClick={onClose} className="cerrar">CERRAR</p></NavLink>             
             </form>
+        </div>
     </>
   )
 }

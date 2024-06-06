@@ -12,7 +12,7 @@ export const ModalSignIn = ( { onClose, onSignUp }) => {
   
     return (
     <>
-             
+        <div className="mw">     
             <form onSubmit={onSubmit} className="tarjeta">            
                 
                 <div>
@@ -65,7 +65,8 @@ export const ModalSignIn = ( { onClose, onSignUp }) => {
                     <p>¿No tenés una cuenta? <NavLink to="/signUp"><span onClick={onSignUp}>Registrarse</span> </NavLink></p>
                 </div> 
                 <NavLink to="/"><p onClick={onClose} className="cerrar">CERRAR</p></NavLink>           
-            </form>    
+            </form>
+        </div>    
     </>
   )
 }

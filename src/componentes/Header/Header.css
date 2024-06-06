@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 85%;
     margin-inline: auto;
     align-items: center;
     min-height: 45rem;
@@ -45,7 +45,7 @@
     box-shadow: 0px 4px 20px 0px #00000040;
     position: absolute;
     padding: 1.1em;
-    width: 85%;
+    width: 95%;
   }
 
   .input{
@@ -55,14 +55,14 @@
     outline: none;
   }
   .btn-ip{
-    padding: 1.2em;
+    padding: 1.1em;
     border-radius: 30px;
     background-color: var(--accent);
     color: #1E1E1E;
     font-weight: 700;
     border: none;
     position: relative;
-    left: 60%;
+    left: 70%;
   }
   .google-btn img{
     max-width: 100%;
@@ -72,11 +72,10 @@
     cursor: pointer;
   }
   .hr-rg{
-    max-width: 100%; 
-    height: auto; 
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
+    width: 45%;
   }
   .hr-rg img{
     max-width: 90%;
@@ -97,7 +96,10 @@
       font-size: 0.8em;
     }
     .input-cnt{
-      padding: 0.7em;
+      padding: 0.6em;
+    }
+    .header{
+      min-height: 32rem;
     }
   }
 
@@ -113,6 +115,9 @@
     }
     .input, .btn-ip{
       font-size: 1.05em;
+    }
+    .input-cnt{
+      padding: 1em;
     }
   }
   

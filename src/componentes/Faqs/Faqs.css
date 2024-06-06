@@ -1,15 +1,17 @@
 .card-acc{
     height: 5em;
 }
+
 .bg-fq{
-    background-color: #FFEC8599;
+    background-image: url("../../assets/faqs.png");
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 43.75em;
+    min-height: 56.75em;
     width: 100%;
     margin-inline: auto;
-}
+} 
 
 .faqs-flex{
     display: flex;
@@ -23,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 3em;
-    max-width: 30em;
+    max-width: 35em;
     margin-inline: auto;
 }
 .accordion h2{
@@ -56,7 +58,7 @@
         font-size: 1.8em;
     }
     .card-acc , .prg-acc{
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
   }
 
@@ -65,7 +67,7 @@
         font-size: 2.3em;
     }
     .card-acc ,.prg-acc{
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
   }
   
@@ -87,7 +89,7 @@
     }
     .cat-img{
         display: block;
-        max-width: 70%;
+        max-width: 80%;
     }
     .cat-cnt{
         display: flex;
@@ -102,7 +104,7 @@
     }
     .cat-img{
         display: block;
-        max-width: 70%;
+        max-width: 85%;
     }
     .cat-cnt{
         display: flex;

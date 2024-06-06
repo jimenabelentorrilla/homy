@@ -18,7 +18,7 @@ function App() {
         <Como />
         <Faqs />
         <Contact />
-        <Footer />    
+        <Footer />  
       </div>
     </>
   )

@@ -9,7 +9,13 @@
     min-height: 49.375em;
     width: 90%;
     margin-inline: auto;
+    
   }
+  .our-bg{
+    background-image: url("../../assets/our.png");
+    background-repeat: no-repeat;
+  }
+
   .row-2 h2{
     font-weight: 700;
     text-align: center;
@@ -32,7 +38,7 @@
   }
   
   .ver-btn{
-    padding: 1em 1.5em 1em 1.5em;
+    padding: 0.6em 1.5em;
     border: 2px var(--accent) solid;
     border-radius: 30px;
     background-color: transparent;

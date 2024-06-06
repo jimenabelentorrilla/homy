@@ -24,15 +24,16 @@ export const Nav = () => {
             <div>
                 <NavLink to="/"><img className="logo" src={Logo}/></NavLink>
             </div>
-            <ul className="ul-flex" >
+            <ul className="ul-flex">
+                <a href="#"><li>Home</li></a>
                 <a href="#productos"><li>Productos</li></a>
                 <a href="#como"><li>¿Cómo funciona?</li></a>
                 <a href="#faqs"><li>Faqs</li></a>
                 <a href="#contacto"><li>Contacto</li></a>
             </ul>
             <div className="cnt-flex">
-                <p >Ingresar</p> {/****onClick={handleOpenSignIn}**/}
-                <button >Comenzar</button> {/***onClick={handleOpenSignUp}***/}
+                <NavLink to="/signIn"><p onClick={handleOpenSignIn}>Ingresar</p></NavLink>
+                <NavLink to="/signUp"><button onClick={handleOpenSignUp}>Comenzar</button></NavLink> 
             </div>
          </div>
         
