@@ -44,6 +44,11 @@
 }
 
 /***form****/
+.w-fr{
+    max-width: 33.75em;
+    display: block;
+    margin-inline: auto;
+}
 .frame-86{
     width: 100%;
     height: auto;
@@ -65,6 +70,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap:1em;
 }
 .cnt-title{
     font-weight: 500;

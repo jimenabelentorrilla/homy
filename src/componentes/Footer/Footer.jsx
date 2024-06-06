@@ -7,15 +7,18 @@ import IconYt from "../../assets/icon-yt-00.png";
 const iconsBl = [
     {
         "id": "1",
-        "icon": IconWp
+        "icon": IconWp,
+        "url": "https://web.whatsapp.com/"
     },
     {
         "id": "2",
-        "icon": IconIg
+        "icon": IconIg,
+        "url": "https://www.instagram.com/"
     },
     {
         "id": "3",
-        "icon": IconYt    
+        "icon": IconYt,
+        "url": "https://www.youtube.com/"    
     }
 ]
 const footerSections = [
@@ -76,7 +79,7 @@ export const Footer = () => {
                     iconsBl.map(icon => {
                         return (
                             <div key={icon.id} className="icon-ft">
-                                <a href="#" target="_blank" >
+                                <a href={icon.url} target="_blank" >
                                     <img src={icon.icon} />
                                 </a>
                             </div>

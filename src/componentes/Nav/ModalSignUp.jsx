@@ -24,55 +24,57 @@ export const ModalSignUp = ({ onClose , onSignIn }) => {
                 <div className="hr-st">
                     <hr /><span>o</span><hr />
                 </div>
-                <div>
-                    <div className="cnt-input">
-                        <div>
-                        <img src={Person} /> 
+                <div className="align-start">
+                    <div className="w-in">
+                        <div className="cnt-input">
+                            <div>
+                            <img src={Person} /> 
+                            </div>
+                            <input 
+                                placeholder="Nombre"
+                                type="username"
+                                name="userName"
+                                value={userName}
+                                onChange={onInputChange}  
+                            /> 
                         </div>
-                        <input 
-                            placeholder="Nombre"
-                            type="username"
-                            name="userName"
-                            value={userName}
-                            onChange={onInputChange}  
-                        /> 
+                        <small className="error">{errors.userName}</small>
                     </div>
-                    <small className="error">{errors.userName}</small>
-                </div>
-                <div>
-                    <div className="cnt-input">
-                        <div>
-                            <img src={Mail} />
+                    <div className="w-in">
+                        <div className="cnt-input">
+                            <div>
+                                <img src={Mail} />
+                            </div>
+                            <input 
+                                placeholder="Email"
+                                type="email"
+                                name="email"
+                                value={email}
+                                onChange={onInputChange} 
+                            />
                         </div>
-                        <input 
-                            placeholder="Email"
-                            type="email"
-                            name="email"
-                            value={email}
-                            onChange={onInputChange} 
-                        />
+                        <small className="error">{errors.email}</small>
                     </div>
-                    <small className="error">{errors.email}</small>
-                </div>
-                <div>
-                    <div className="cnt-input">
-                        <div>
-                            <img src={Lock} />
+                    <div className="w-in">
+                        <div className="cnt-input">
+                            <div>
+                                <img src={Lock} />
+                            </div>
+                            <input 
+                                placeholder="Contraseña"
+                                type="password"
+                                name="password"
+                                value={password}
+                                onChange={onInputChange} 
+                            />
                         </div>
-                        <input 
-                            placeholder="Contraseña"
-                            type="password"
-                            name="password"
-                            value={password}
-                            onChange={onInputChange} 
-                        />
+                        <small className="error">{errors.password}</small>
                     </div>
-                    <small className="error">{errors.password}</small>
+                    <div className="span-cont">
+                        <span>¿Olvidaste tu contraseña?</span>
+                    </div>
                 </div>
-                <div className="span-cont">
-                    <span>¿Olvidaste tu contraseña?</span>
-                </div>
-                <div>
+                <div className="w-btn">
                     <button className="btn-rgs">Registrarse</button>
                 </div>
                 <div className="color-p-span">

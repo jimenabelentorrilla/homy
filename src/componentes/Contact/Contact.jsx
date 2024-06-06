@@ -69,15 +69,18 @@ const Form = () => {
 const icons = [
     {
         "id": "1",
-        "icon": IconWp
+        "icon": IconWp,
+        "url": "https:/web.whatsapp.com/"
     },
     {
         "id": "2",
-        "icon": IconIg
+        "icon": IconIg,
+        "url": "https://www.instagram.com/"
     },
     {
         "id": "3",
-        "icon": IconYt    
+        "icon": IconYt,
+        "url": "https://www.youtube.com/"    
     }
 ]
 
@@ -95,7 +98,7 @@ export const Contact = () => {
                         icons.map(icon => {
                             return (
                                 <div key={icon.id}>
-                                    <a href="#" target="_blank" >
+                                    <a href={icon.url} target="_blank" >
                                         <img src={icon.icon} />
                                     </a>
                                 </div>
@@ -103,11 +106,11 @@ export const Contact = () => {
                     }                    
                 </div>
                 <div>
-                    <a href="#" className="sp-cn"><span >support@homy.com</span></a>
+                    <a href="https://mail.google.com/" target="_blank" className="sp-cn"><span >support@homy.com</span></a>
                 </div>
             </div>
         </div>             
-        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+        <div className="w-fr" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
             <Form />
         </div>
     </div>

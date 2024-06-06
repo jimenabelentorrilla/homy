@@ -1,6 +1,6 @@
   /**modal*/
   .mw {
-    max-width: 37.75em;
+    max-width: 33.75em;
     display: block;
     margin-inline: auto;
   }
@@ -12,13 +12,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5em;
-    gap: 0.5em;
     height: 90vh;
   }
 
   .title-tarj {
     color: #1E1E1E;
     font-weight: 700;
+    font-size: 1.6em;
   }
   .cerrar {
     font-weight: 700;
@@ -33,7 +33,7 @@
     justify-content: center;
     align-items: center;
     gap: 1.5em;
-    max-width: 35.25em;
+    width: 90%;
     border-radius: 10px;
     cursor: pointer;
   }
@@ -46,18 +46,28 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    width: 90%;
   }
   .hr-st hr {
-    max-width: 17.8125em;
     color: #C4C4C4;
     opacity: 0.4;
+    width: 100%;
   }
   .hr-st span {
     color:#C4C4C4;
   }
+  .align-start{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+  .w-in{
+    width: 100%;
+  }
   .cnt-input {
-    max-width: 34em;
-    min-height: 2.75em;
+    min-height: 3em;
     border-radius: 10px;
     border: 1px solid #D9D9D9;
     gap: 0.875em;
@@ -78,11 +88,16 @@
     color: #FFCA61;
     max-width: 35.25em;
     cursor: pointer;
+    text-decoration: underline 1px solid #FFCA61;
   }
-  
+  .w-btn{
+    width: 90%;
+    margin-inline: auto;
+  }
   .btn-rgs {
     background-color: #FFCA61;
     min-height: 3em;
+    width: 100%;
     padding: 1em 1.4em;
     border-radius: 30px;
     color: #383838;
@@ -101,39 +116,12 @@
   }
   .error { 
     color:red;
+    font-size: 0.75em;
   }
-
-
-  @media (width < 576px) {
-    
-  }
-
-  @media (min-width: 576px) and (max-width: 767.99px){
-    
+  .btn-google p , .hr-st span,
+  .cnt-input input, .btn-rgs,
+  .span-cont, .color-p-span {
+    font-size: 1em;
   }
   
-  @media (min-width: 768px) and (max-width: 991.99px){
-    
-  }
-  
-
-  @media (min-width: 1200px) and (max-width: 1399.98px) {
-    
-  }
-  @media (width > 1400px){
-    .title-tarj{
-      font-size: 1.775em;
-    }
-    .btn-google p , .hr-st span{
-      font-size: 1.1em;
-    }
-    .cnt-input input, .btn-rgs{
-      font-size: 1.125em;
-    }
-    .span-cont, .color-p-span{
-      font-size: 1em;
-    }
-    .error{
-      font-size: 0.75em;
-    }
-  }
+ 

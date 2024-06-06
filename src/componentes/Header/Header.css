@@ -7,7 +7,7 @@
     width: 85%;
     margin-inline: auto;
     align-items: center;
-    min-height: 45rem;
+    min-height: 60rem;
   }
   .hr-lf{
     display: flex;
@@ -90,7 +90,7 @@
       font-size: 2.2em;
     }
     .hr-text p{
-       font-size: 0.8em;
+       font-size: 0.9em;
     }
     .input, .btn-ip{
       font-size: 0.8em;
@@ -99,7 +99,7 @@
       padding: 0.6em;
     }
     .header{
-      min-height: 32rem;
+      min-height: 45rem;
     }
   }
 
@@ -118,6 +118,9 @@
     }
     .input-cnt{
       padding: 1em;
+    }
+    .header{
+      min-height: 45rem;
     }
   }
   
